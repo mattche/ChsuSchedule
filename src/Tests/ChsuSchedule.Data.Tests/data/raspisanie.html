@@ -1,0 +1,874 @@
+	<html>
+	<head>
+	<title>Расписание</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	</head>
+	<body background="fon.jpg" bgcolor=#FFFFFF>
+<!-- -->
+<table>
+<tr>
+<DIV id="Layer1" style="z-index:10">
+   <form action="_prepod.php">
+   <INPUT TYPE="submit" ACTION="_prepod.php" VALUE="Расписание преподавателей">
+   </form>
+</DIV>
+
+<DIV id="Layer2" style="position:absolute; right:10px; top:10px; width:200px; height:10px; z-index:5">
+<!-- <img align="left" width=420 height=70 src=Elka.jpg alt="скоро новый год"> -->
+<center>
+<b>-={ <font size=5>25</font> - учебная неделя }=-
+Сегодня 14.02.2017</b>
+</center>
+</DIV>
+</tr><tr>
+</table>
+
+<!--  
+#text{position:absolute;top:0;left:0;z-index:10}
+#flash{position:absolute;top:0;left:0;z-index:5}
+
+<div id=text><§¤Ґбм енвн¬н«м></div>
+<div id=flash<§¤Ґбм д« и></div>
+
+
+width=307 height=203 --><html><head><title>Расписание занятий</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body>
+<form name="selecter1" action="_student.php" method="post"><select name="gr" size=1>
+<option value="02.06.01-04-21оп"> 02.06.01-04-21оп </option>
+<option value="03.06.01-01-11оп"> 03.06.01-01-11оп </option>
+<option value="03.06.01-01-21зп"> 03.06.01-01-21зп </option>
+<option value="03.06.01-01-21оп"> 03.06.01-01-21оп </option>
+<option value="06.06.01-01-11зп"> 06.06.01-01-11зп </option>
+<option value="06.06.01-01-11оп"> 06.06.01-01-11оп </option>
+<option value="06.06.01-01-21оп"> 06.06.01-01-21оп </option>
+<option value="06.06.01-01-41оп"> 06.06.01-01-41оп </option>
+<option value="08.06.01-01-11оп"> 08.06.01-01-11оп </option>
+<option value="09.06.01-01-11оп"> 09.06.01-01-11оп </option>
+<option value="09.06.01-01-21оп"> 09.06.01-01-21оп </option>
+<option value="09.06.01-03-11оп"> 09.06.01-03-11оп </option>
+<option value="09.06.01-03-21оп"> 09.06.01-03-21оп </option>
+<option value="13.06.01-01-11оп"> 13.06.01-01-11оп </option>
+<option value="13.06.01-01-21оп"> 13.06.01-01-21оп </option>
+<option value="15.06.01-01-21оп"> 15.06.01-01-21оп </option>
+<option value="15.06.01-02-31зп"> 15.06.01-02-31зп </option>
+<option value="1АПм-01-11оп"> 1АПм-01-11оп </option>
+<option value="1АПм-01-21оп"> 1АПм-01-21оп </option>
+<option value="1АПпб-00-11оп"> 1АПпб-00-11оп </option>
+<option value="1АПпб-00-21оп"> 1АПпб-00-21оп </option>
+<option value="1АПпб-00-31оп"> 1АПпб-00-31оп </option>
+<option value="1АПпб-00-41оп"> 1АПпб-00-41оп </option>
+<option value="1БИб-01-41оп"> 1БИб-01-41оп </option>
+<option value="1ИБб-01-11оп"> 1ИБб-01-11оп </option>
+<option value="1ИБб-01-21оп"> 1ИБб-01-21оп </option>
+<option value="1ИБб-01-31оп"> 1ИБб-01-31оп </option>
+<option value="1ИБб-01-41оп"> 1ИБб-01-41оп </option>
+<option value="1ИВТм-01-11оп"> 1ИВТм-01-11оп </option>
+<option value="1ИВТм-01-21оп"> 1ИВТм-01-21оп </option>
+<option value="1ИВТпб-01-11оп"> 1ИВТпб-01-11оп </option>
+<option value="1ИВТпб-01-21оп"> 1ИВТпб-01-21оп </option>
+<option value="1ИВТпб-01-31оп"> 1ИВТпб-01-31оп </option>
+<option value="1ИСб-00-11оп"> 1ИСб-00-11оп </option>
+<option value="1ИСб-00-21оп"> 1ИСб-00-21оп </option>
+<option value="1ИСб-00-31оп"> 1ИСб-00-31оп </option>
+<option value="1ИСб-00-41вп"> 1ИСб-00-41вп </option>
+<option value="1ИСб-00-41оп"> 1ИСб-00-41оп </option>
+<option value="1ИТСб-00-41вп"> 1ИТСб-00-41вп </option>
+<option value="1ИТСб-00-41оп"> 1ИТСб-00-41оп </option>
+<option value="1ПИб-01-11оп"> 1ПИб-01-11оп </option>
+<option value="1ПИб-01-21оп"> 1ПИб-01-21оп </option>
+<option value="1ПИб-01-31оп"> 1ПИб-01-31оп </option>
+<option value="1ПИб-01-41оп" SELECTED> 1ПИб-01-41оп </option><option value="1ПИм-02-11оп"> 1ПИм-02-11оп </option>
+<option value="1ПИм-02-21оп"> 1ПИм-02-21оп </option>
+<option value="1ПИНФпб-01-21оп"> 1ПИНФпб-01-21оп </option>
+<option value="1ПИНФпб-01-31оп"> 1ПИНФпб-01-31оп </option>
+<option value="1ПМб-00-21оп"> 1ПМб-00-21оп </option>
+<option value="1ПМб-00-31оп"> 1ПМб-00-31оп </option>
+<option value="1ПМб-01-11оп"> 1ПМб-01-11оп </option>
+<option value="1ПМм-02-21оп"> 1ПМм-02-21оп </option>
+<option value="1РФб-01-11оп"> 1РФб-01-11оп </option>
+<option value="1РФб-01-21оп"> 1РФб-01-21оп </option>
+<option value="1РФб-01-31оп"> 1РФб-01-31оп </option>
+<option value="1РФб-01-41оп"> 1РФб-01-41оп </option>
+<option value="1ТФб-00-11оп"> 1ТФб-00-11оп </option>
+<option value="1ТФб-00-21оп"> 1ТФб-00-21оп </option>
+<option value="1ТФб-00-31оп"> 1ТФб-00-31оп </option>
+<option value="1УТСб-01-11зп"> 1УТСб-01-11зп </option>
+<option value="1УТСб-01-21зп"> 1УТСб-01-21зп </option>
+<option value="1УТСб-01-21оп"> 1УТСб-01-21оп </option>
+<option value="1УТСб-01-22зп"> 1УТСб-01-22зп </option>
+<option value="1УТСб-01-23зп"> 1УТСб-01-23зп </option>
+<option value="1УТСб-01-31зп"> 1УТСб-01-31зп </option>
+<option value="1УТСб-01-31оп"> 1УТСб-01-31оп </option>
+<option value="1УТСб-01-51зп"> 1УТСб-01-51зп </option>
+<option value="1УТСм-01-11оп"> 1УТСм-01-11оп </option>
+<option value="1УТСм-01-21оп"> 1УТСм-01-21оп </option>
+<option value="1Фм-01-21оп"> 1Фм-01-21оп </option>
+<option value="22.06.01-01-11оп"> 22.06.01-01-11оп </option>
+<option value="22.06.01-02-11оп"> 22.06.01-02-11оп </option>
+<option value="22.06.01-02-21оп"> 22.06.01-02-21оп </option>
+<option value="22.06.01-02-31зп"> 22.06.01-02-31зп </option>
+<option value="27.06.01-02-11оп"> 27.06.01-02-11оп </option>
+<option value="27.06.01-02-21оп"> 27.06.01-02-21оп </option>
+<option value="27.06.01-02-31зп"> 27.06.01-02-31зп </option>
+<option value="2Дб-03-11зп"> 2Дб-03-11зп </option>
+<option value="2Дб-03-11оп"> 2Дб-03-11оп </option>
+<option value="2Дб-03-21зп"> 2Дб-03-21зп </option>
+<option value="2Дб-03-21оп"> 2Дб-03-21оп </option>
+<option value="2Дб-03-31оп"> 2Дб-03-31оп </option>
+<option value="2Дб-03-51зп"> 2Дб-03-51зп </option>
+<option value="2ЖУРб-00-21зп"> 2ЖУРб-00-21зп </option>
+<option value="2ЖУРб-00-21оп"> 2ЖУРб-00-21оп </option>
+<option value="2ЖУРб-00-31зп"> 2ЖУРб-00-31зп </option>
+<option value="2ЖУРб-00-31оп"> 2ЖУРб-00-31оп </option>
+<option value="2ЖУРб-00-41зп"> 2ЖУРб-00-41зп </option>
+<option value="2ЖУРб-00-41оп"> 2ЖУРб-00-41оп </option>
+<option value="2ЖУРб-00-51зп"> 2ЖУРб-00-51зп </option>
+<option value="2ЖУРм-01-11оп"> 2ЖУРм-01-11оп </option>
+<option value="2ЖУРм-01-21оп"> 2ЖУРм-01-21оп </option>
+<option value="2ЖУРпб-00-11зп"> 2ЖУРпб-00-11зп </option>
+<option value="2ЖУРпб-00-11оп"> 2ЖУРпб-00-11оп </option>
+<option value="2ЖУРпб-00-12зп"> 2ЖУРпб-00-12зп </option>
+<option value="2Иб-00-41оп"> 2Иб-00-41оп </option>
+<option value="2ИГНм-01-21оп"> 2ИГНм-01-21оп </option>
+<option value="2Им-02-21зп"> 2Им-02-21зп </option>
+<option value="2Лб-01-11оп"> 2Лб-01-11оп </option>
+<option value="2Лб-01-12оп"> 2Лб-01-12оп </option>
+<option value="2Лб-01-21оп"> 2Лб-01-21оп </option>
+<option value="2Лб-01-31оп"> 2Лб-01-31оп </option>
+<option value="2Лб-01-41оп"> 2Лб-01-41оп </option>
+<option value="2МОм-01-11оп"> 2МОм-01-11оп </option>
+<option value="2МОм-02-11оп"> 2МОм-02-11оп </option>
+<option value="2МОм-02-21оп"> 2МОм-02-21оп </option>
+<option value="2МОм-03-21оп"> 2МОм-03-21оп </option>
+<option value="2ПДОпб-13-11оп"> 2ПДОпб-13-11оп </option>
+<option value="2ПДОпб-13-21оп"> 2ПДОпб-13-21оп </option>
+<option value="2ПДОпб-13-31оп"> 2ПДОпб-13-31оп </option>
+<option value="2ПДОпб-14-11оп"> 2ПДОпб-14-11оп </option>
+<option value="2ПДОпб-14-21оп"> 2ПДОпб-14-21оп </option>
+<option value="2ПДОпб-14-31оп"> 2ПДОпб-14-31оп </option>
+<option value="2РТПб-01-21оп"> 2РТПб-01-21оп </option>
+<option value="2РТПб-01-31оп"> 2РТПб-01-31оп </option>
+<option value="2Сб-00-11оп"> 2Сб-00-11оп </option>
+<option value="2Сб-00-12оп"> 2Сб-00-12оп </option>
+<option value="2Сб-00-21оп"> 2Сб-00-21оп </option>
+<option value="2Сб-00-31оп"> 2Сб-00-31оп </option>
+<option value="2Сб-00-41оп"> 2Сб-00-41оп </option>
+<option value="2См-01-11оп"> 2См-01-11оп </option>
+<option value="2См-01-21оп"> 2См-01-21оп </option>
+<option value="2См-02-11зп"> 2См-02-11зп </option>
+<option value="2См-02-11оп"> 2См-02-11оп </option>
+<option value="2См-02-21оп"> 2См-02-21оп </option>
+<option value="2См-03-21оп"> 2См-03-21оп </option>
+<option value="2СОб-00-11оп"> 2СОб-00-11оп </option>
+<option value="2СОб-00-21оп"> 2СОб-00-21оп </option>
+<option value="2СОб-00-31оп"> 2СОб-00-31оп </option>
+<option value="2СОб-00-41оп"> 2СОб-00-41оп </option>
+<option value="2СРб-02-31оп"> 2СРб-02-31оп </option>
+<option value="2Тб-00-21оп"> 2Тб-00-21оп </option>
+<option value="2Тб-00-22зп"> 2Тб-00-22зп </option>
+<option value="2Тб-00-31зп"> 2Тб-00-31зп </option>
+<option value="2Тб-00-32зп"> 2Тб-00-32зп </option>
+<option value="2Тб-00-41оп"> 2Тб-00-41оп </option>
+<option value="2Тпб-00-11зп"> 2Тпб-00-11зп </option>
+<option value="2Тпб-00-11оп"> 2Тпб-00-11оп </option>
+<option value="2Фм-03-21оп"> 2Фм-03-21оп </option>
+<option value="2Фм-06-11оп"> 2Фм-06-11оп </option>
+<option value="2Фм-06-21оп"> 2Фм-06-21оп </option>
+<option value="2ФРб-05-41оп"> 2ФРб-05-41оп </option>
+<option value="37.06.01-01-21зп"> 37.06.01-01-21зп </option>
+<option value="37.06.01-01-21оп"> 37.06.01-01-21оп </option>
+<option value="38.06.01-01-11оп"> 38.06.01-01-11оп </option>
+<option value="38.06.01-01-21зп"> 38.06.01-01-21зп </option>
+<option value="38.06.01-01-21оп"> 38.06.01-01-21оп </option>
+<option value="3ДАС-00-41оп"> 3ДАС-00-41оп </option>
+<option value="3ДАСб-00-21оп"> 3ДАСб-00-21оп </option>
+<option value="3ДАСб-00-22оп"> 3ДАСб-00-22оп </option>
+<option value="3ДАСб-00-31оп"> 3ДАСб-00-31оп </option>
+<option value="3МСпб-01-21оп"> 3МСпб-01-21оп </option>
+<option value="3МТб-01-11зп"> 3МТб-01-11зп </option>
+<option value="3МТб-03-41вп"> 3МТб-03-41вп </option>
+<option value="3МТм-01-11оп"> 3МТм-01-11оп </option>
+<option value="3МТм-01-21оп"> 3МТм-01-21оп </option>
+<option value="3МТм-03-11оп"> 3МТм-03-11оп </option>
+<option value="3МТм-03-21оп"> 3МТм-03-21оп </option>
+<option value="3МТпб-01-21оп"> 3МТпб-01-21оп </option>
+<option value="3МТпб-01-41вп"> 3МТпб-01-41вп </option>
+<option value="3МТпб-03-11оп"> 3МТпб-03-11оп </option>
+<option value="3МТпб-03-31оп"> 3МТпб-03-31оп </option>
+<option value="3МТпб-03-41оп"> 3МТпб-03-41оп </option>
+<option value="3НТМ(с)з-611"> 3НТМ(с)з-611 </option>
+<option value="3НТТС-01-21зп"> 3НТТС-01-21зп </option>
+<option value="3НТТС-01-31зп"> 3НТТС-01-31зп </option>
+<option value="3НТТС-01-31оп"> 3НТТС-01-31оп </option>
+<option value="3НТТС-01-41оп"> 3НТТС-01-41оп </option>
+<option value="3НТТС-01-51оп"> 3НТТС-01-51оп </option>
+<option value="3СТб-00-31зп"> 3СТб-00-31зп </option>
+<option value="3СТб-00-32зп"> 3СТб-00-32зп </option>
+<option value="3СТб-00-41зп"> 3СТб-00-41зп </option>
+<option value="3СТб-00-41оп"> 3СТб-00-41оп </option>
+<option value="3СТб-00-51зп"> 3СТб-00-51зп </option>
+<option value="3СТб-01-21зп"> 3СТб-01-21зп </option>
+<option value="3СТб-01-22зп"> 3СТб-01-22зп </option>
+<option value="3СТб-01-31вп"> 3СТб-01-31вп </option>
+<option value="3СТб-01-41зв"> 3СТб-01-41зв </option>
+<option value="3СТм-01-21оп"> 3СТм-01-21оп </option>
+<option value="3СТм-02-11зп"> 3СТм-02-11зп </option>
+<option value="3СТм-02-21зп"> 3СТм-02-21зп </option>
+<option value="3СТм-02-31зп"> 3СТм-02-31зп </option>
+<option value="3СТм-03-21оп"> 3СТм-03-21оп </option>
+<option value="3СТм-04-11оп"> 3СТм-04-11оп </option>
+<option value="3СТпб-02-11вп"> 3СТпб-02-11вп </option>
+<option value="3СТпб-02-11зп"> 3СТпб-02-11зп </option>
+<option value="3СТпб-02-11оп"> 3СТпб-02-11оп </option>
+<option value="3СТпб-02-12зп"> 3СТпб-02-12зп </option>
+<option value="3СТпб-02-21оп"> 3СТпб-02-21оп </option>
+<option value="3СТпб-02-22вп"> 3СТпб-02-22вп </option>
+<option value="3СТпб-02-31оп"> 3СТпб-02-31оп </option>
+<option value="3ТБб-02-11зп"> 3ТБб-02-11зп </option>
+<option value="3ТБб-02-11оп"> 3ТБб-02-11оп </option>
+<option value="3ТБб-02-21оп"> 3ТБб-02-21оп </option>
+<option value="3ТБб-02-31зп"> 3ТБб-02-31зп </option>
+<option value="3ТБб-02-31оп"> 3ТБб-02-31оп </option>
+<option value="3ТБб-02-41зп"> 3ТБб-02-41зп </option>
+<option value="3ТБб-02-41оп"> 3ТБб-02-41оп </option>
+<option value="3ТБм-03-11оп"> 3ТБм-03-11оп </option>
+<option value="3ТБм-03-21оп"> 3ТБм-03-21оп </option>
+<option value="3ТМб-01-11зп"> 3ТМб-01-11зп </option>
+<option value="3ТМб-01-21зп"> 3ТМб-01-21зп </option>
+<option value="3ТМб-01-22зп"> 3ТМб-01-22зп </option>
+<option value="3ТМб-01-31зп"> 3ТМб-01-31зп </option>
+<option value="3ТМб-01-41зп"> 3ТМб-01-41зп </option>
+<option value="3ТМб-01-41оп"> 3ТМб-01-41оп </option>
+<option value="3ТМпб-01-31оп"> 3ТМпб-01-31оп </option>
+<option value="3ТТб-01-11зп"> 3ТТб-01-11зп </option>
+<option value="3ТТб-01-11оп"> 3ТТб-01-11оп </option>
+<option value="3ТТб-01-21зп"> 3ТТб-01-21зп </option>
+<option value="3ТТб-01-31зп"> 3ТТб-01-31зп </option>
+<option value="3ТТб-01-31оп"> 3ТТб-01-31оп </option>
+<option value="3ТТб-01-41зп"> 3ТТб-01-41зп </option>
+<option value="3ТТб-01-41оп"> 3ТТб-01-41оп </option>
+<option value="3ТТб-01-51зп"> 3ТТб-01-51зп </option>
+<option value="3ТТм-01-11оп"> 3ТТм-01-11оп </option>
+<option value="3ТТм-01-21оп"> 3ТТм-01-21оп </option>
+<option value="3ТТпб-01-21оп"> 3ТТпб-01-21оп </option>
+<option value="3ХТб-01-11зп"> 3ХТб-01-11зп </option>
+<option value="3ХТб-01-31зп"> 3ХТб-01-31зп </option>
+<option value="3ХТб-01-41оп"> 3ХТб-01-41оп </option>
+<option value="3ХТпб-01-11оп"> 3ХТпб-01-11оп </option>
+<option value="3ХТпб-01-21оп"> 3ХТпб-01-21оп </option>
+<option value="3ХТпб-01-31оп"> 3ХТпб-01-31оп </option>
+<option value="3ЭТМб-01-41зп"> 3ЭТМб-01-41зп </option>
+<option value="3ЭТМб-01-51зп"> 3ЭТМб-01-51зп </option>
+<option value="3ЭТМпб-01-21оп"> 3ЭТМпб-01-21оп </option>
+<option value="3ЭТМпб-01-41оп"> 3ЭТМпб-01-41оп </option>
+<option value="3ЭЭб-01-11зп"> 3ЭЭб-01-11зп </option>
+<option value="3ЭЭб-01-21зп"> 3ЭЭб-01-21зп </option>
+<option value="3ЭЭб-01-22зп"> 3ЭЭб-01-22зп </option>
+<option value="3ЭЭб-01-31зп"> 3ЭЭб-01-31зп </option>
+<option value="3ЭЭб-01-41зп"> 3ЭЭб-01-41зп </option>
+<option value="3ЭЭб-01-41оп"> 3ЭЭб-01-41оп </option>
+<option value="3ЭЭб-01-51зп"> 3ЭЭб-01-51зп </option>
+<option value="3ЭЭм-01-11оп"> 3ЭЭм-01-11оп </option>
+<option value="3ЭЭм-01-21оп"> 3ЭЭм-01-21оп </option>
+<option value="3ЭЭпб-01-11оп"> 3ЭЭпб-01-11оп </option>
+<option value="3ЭЭпб-01-21оп"> 3ЭЭпб-01-21оп </option>
+<option value="3ЭЭпб-01-31оп"> 3ЭЭпб-01-31оп </option>
+<option value="44.06.01-01-11оп"> 44.06.01-01-11оп </option>
+<option value="44.06.01-01-21зп"> 44.06.01-01-21зп </option>
+<option value="44.06.01-01-21оп"> 44.06.01-01-21оп </option>
+<option value="44.06.01-01-31зп"> 44.06.01-01-31зп </option>
+<option value="44.06.01-03-11зп"> 44.06.01-03-11зп </option>
+<option value="44.06.01-03-21зп"> 44.06.01-03-21зп </option>
+<option value="44.06.01-03-31оп"> 44.06.01-03-31оп </option>
+<option value="44.06.01-22-21оп"> 44.06.01-22-21оп </option>
+<option value="44.06.01-22-31оп"> 44.06.01-22-31оп </option>
+<option value="44.06.01-24-21оп"> 44.06.01-24-21оп </option>
+<option value="45.06.01-01-21зп"> 45.06.01-01-21зп </option>
+<option value="45.06.01-01-21оп"> 45.06.01-01-21оп </option>
+<option value="45.06.01-01-31оп"> 45.06.01-01-31оп </option>
+<option value="45.06.01-02-11оп"> 45.06.01-02-11оп </option>
+<option value="45.06.01-02-21оп"> 45.06.01-02-21оп </option>
+<option value="45.06.01-02-31оп"> 45.06.01-02-31оп </option>
+<option value="45.06.01-03-11оп"> 45.06.01-03-11оп </option>
+<option value="45.06.01-03-21оп"> 45.06.01-03-21оп </option>
+<option value="45.06.01-03-31оп"> 45.06.01-03-31оп </option>
+<option value="46.06.01-01-11зп"> 46.06.01-01-11зп </option>
+<option value="46.06.01-01-11оп"> 46.06.01-01-11оп </option>
+<option value="46.06.01-01-21зп"> 46.06.01-01-21зп </option>
+<option value="46.06.01-01-21оп"> 46.06.01-01-21оп </option>
+<option value="46.06.01-01-31зп"> 46.06.01-01-31зп </option>
+<option value="47.06.01-01-11зп"> 47.06.01-01-11зп </option>
+<option value="47.06.01-02-11оп"> 47.06.01-02-11оп </option>
+<option value="47.06.01-02-21зп"> 47.06.01-02-21зп </option>
+<option value="47.06.01-02-21оп"> 47.06.01-02-21оп </option>
+<option value="47.06.01-02-31зп"> 47.06.01-02-31зп </option>
+<option value="4ВППб-03-11зп"> 4ВППб-03-11зп </option>
+<option value="4Дб-02-11зп"> 4Дб-02-11зп </option>
+<option value="4Дб-02-21зп"> 4Дб-02-21зп </option>
+<option value="4Дб-02-41оп"> 4Дб-02-41оп </option>
+<option value="4ДОб-04-11зп"> 4ДОб-04-11зп </option>
+<option value="4ДОб-04-11оп"> 4ДОб-04-11оп </option>
+<option value="4ДОб-04-22зп"> 4ДОб-04-22зп </option>
+<option value="4ДОб-04-31зп"> 4ДОб-04-31зп </option>
+<option value="4ДОб-04-32зп"> 4ДОб-04-32зп </option>
+<option value="4ДОб-04-41зп"> 4ДОб-04-41зп </option>
+<option value="4ДОб-04-42зп"> 4ДОб-04-42зп </option>
+<option value="4ДОб-04-51зп"> 4ДОб-04-51зп </option>
+<option value="4ИЗОб-03-21оп"> 4ИЗОб-03-21оп </option>
+<option value="4ИЗОб-03-31зп"> 4ИЗОб-03-31зп </option>
+<option value="4ИЗОб-03-41зп"> 4ИЗОб-03-41зп </option>
+<option value="4ИЗОб-03-51зп"> 4ИЗОб-03-51зп </option>
+<option value="4НОб-01-11зп"> 4НОб-01-11зп </option>
+<option value="4НОб-01-11оп"> 4НОб-01-11оп </option>
+<option value="4НОб-01-12зп"> 4НОб-01-12зп </option>
+<option value="4НОб-01-21зп"> 4НОб-01-21зп </option>
+<option value="4НОб-01-21оп"> 4НОб-01-21оп </option>
+<option value="4НОб-01-22зп"> 4НОб-01-22зп </option>
+<option value="4НОб-01-23зп"> 4НОб-01-23зп </option>
+<option value="4НОб-01-31зп"> 4НОб-01-31зп </option>
+<option value="4НОб-01-31оп"> 4НОб-01-31оп </option>
+<option value="4НОб-01-32зп"> 4НОб-01-32зп </option>
+<option value="4НОб-01-41зп"> 4НОб-01-41зп </option>
+<option value="4НОб-01-41оп"> 4НОб-01-41оп </option>
+<option value="4НОб-01-42зп"> 4НОб-01-42зп </option>
+<option value="4НОб-01-51зп"> 4НОб-01-51зп </option>
+<option value="4ПДОм-01-21зп"> 4ПДОм-01-21зп </option>
+<option value="4ПДОм-02-11зп"> 4ПДОм-02-11зп </option>
+<option value="4ПДОм-02-21зп"> 4ПДОм-02-21зп </option>
+<option value="4ПДОм-02-31зп"> 4ПДОм-02-31зп </option>
+<option value="4ПДОм-03-11зп"> 4ПДОм-03-11зп </option>
+<option value="4ПДОм-03-21зп"> 4ПДОм-03-21зп </option>
+<option value="4ПДОм-03-21оп"> 4ПДОм-03-21оп </option>
+<option value="4ПДОм-03-31зп"> 4ПДОм-03-31зп </option>
+<option value="4ПДОм-06-31зп"> 4ПДОм-06-31зп </option>
+<option value="4ПДП-01-41оп"> 4ПДП-01-41оп </option>
+<option value="4ПОб-01-11зп"> 4ПОб-01-11зп </option>
+<option value="4ПОб-01-31зп"> 4ПОб-01-31зп </option>
+<option value="4ППДОб-01-11зп"> 4ППДОб-01-11зп </option>
+<option value="4ППДОб-01-21зп"> 4ППДОб-01-21зп </option>
+<option value="4ППДОб-01-21оп"> 4ППДОб-01-21оп </option>
+<option value="4ППДОб-01-31зп"> 4ППДОб-01-31зп </option>
+<option value="4ППДОб-01-31оп"> 4ППДОб-01-31оп </option>
+<option value="4ППДОб-01-32зп"> 4ППДОб-01-32зп </option>
+<option value="4ППДОб-01-41зп"> 4ППДОб-01-41зп </option>
+<option value="4ППДОб-01-41оп"> 4ППДОб-01-41оп </option>
+<option value="4ППДОб-01-42зп"> 4ППДОб-01-42зп </option>
+<option value="4ППОм-01-11зп"> 4ППОм-01-11зп </option>
+<option value="4ППОм-01-21зп"> 4ППОм-01-21зп </option>
+<option value="4ППОм-01-21оп"> 4ППОм-01-21оп </option>
+<option value="4ППОм-03-11зп"> 4ППОм-03-11зп </option>
+<option value="4ППОм-03-21зп"> 4ППОм-03-21зп </option>
+<option value="4ППОм-03-31зп"> 4ППОм-03-31зп </option>
+<option value="4ППОм-04-11зп"> 4ППОм-04-11зп </option>
+<option value="4ППОм-04-21оп"> 4ППОм-04-21оп </option>
+<option value="4ПСб-00-11зп"> 4ПСб-00-11зп </option>
+<option value="4ПСб-00-11оп"> 4ПСб-00-11оп </option>
+<option value="4ПСб-00-21зп"> 4ПСб-00-21зп </option>
+<option value="4ПСб-00-31зп"> 4ПСб-00-31зп </option>
+<option value="4ПСб-00-41зп"> 4ПСб-00-41зп </option>
+<option value="4ПСб-00-41оп"> 4ПСб-00-41оп </option>
+<option value="4ПСб-00-51зп"> 4ПСб-00-51зп </option>
+<option value="4ПСД-01-21оп"> 4ПСД-01-21оп </option>
+<option value="4ПСД-01-31оп"> 4ПСД-01-31оп </option>
+<option value="4ПСД-01-41оп"> 4ПСД-01-41оп </option>
+<option value="4ПСм-01-11зп"> 4ПСм-01-11зп </option>
+<option value="4ПСм-01-21зп"> 4ПСм-01-21зп </option>
+<option value="4ПСм-01-31зп"> 4ПСм-01-31зп </option>
+<option value="4ПСПб-02-11зп"> 4ПСПб-02-11зп </option>
+<option value="4ПСПб-02-21зп"> 4ПСПб-02-21зп </option>
+<option value="4ПСПб-02-21оп"> 4ПСПб-02-21оп </option>
+<option value="4ПСПб-02-31зп"> 4ПСПб-02-31зп </option>
+<option value="4ПСПб-02-31оп"> 4ПСПб-02-31оп </option>
+<option value="4СДОб-01-11зп"> 4СДОб-01-11зп </option>
+<option value="4СДОб-01-11оп"> 4СДОб-01-11оп </option>
+<option value="4СДОб-01-21зп"> 4СДОб-01-21зп </option>
+<option value="4СДОб-01-21оп"> 4СДОб-01-21оп </option>
+<option value="4СДОб-01-22зп"> 4СДОб-01-22зп </option>
+<option value="4СДОб-01-31зп"> 4СДОб-01-31зп </option>
+<option value="4СДОб-01-31оп"> 4СДОб-01-31оп </option>
+<option value="4СДОб-01-32зп"> 4СДОб-01-32зп </option>
+<option value="4СДОб-01-41зп"> 4СДОб-01-41зп </option>
+<option value="4СДОб-01-41оп"> 4СДОб-01-41оп </option>
+<option value="4СДОб-01-42зп"> 4СДОб-01-42зп </option>
+<option value="4СДОб-01-51зп"> 4СДОб-01-51зп </option>
+<option value="4СДОб-02-11зп"> 4СДОб-02-11зп </option>
+<option value="4СДОб-02-21зп"> 4СДОб-02-21зп </option>
+<option value="4СДОб-02-31зп"> 4СДОб-02-31зп </option>
+<option value="4СДОм-01-11зп"> 4СДОм-01-11зп </option>
+<option value="4СДОм-01-21зп"> 4СДОм-01-21зп </option>
+<option value="4СДОм-03-11зп"> 4СДОм-03-11зп </option>
+<option value="4СДОм-03-21зп"> 4СДОм-03-21зп </option>
+<option value="4СДОм-03-21оп"> 4СДОм-03-21оп </option>
+<option value="4СДОм-03-31зп"> 4СДОм-03-31зп </option>
+<option value="4СДОм-04-21оп"> 4СДОм-04-21оп </option>
+<option value="4СДОм-04-31зп"> 4СДОм-04-31зп </option>
+<option value="4ТОб-06-11оп"> 4ТОб-06-11оп </option>
+<option value="4ТОб-06-41оп"> 4ТОб-06-41оп </option>
+<option value="50.06.01-01-31зп"> 50.06.01-01-31зп </option>
+<option value="7ГМУб-00-11зп"> 7ГМУб-00-11зп </option>
+<option value="7ГМУб-00-11оп"> 7ГМУб-00-11оп </option>
+<option value="7ГМУб-00-21зп"> 7ГМУб-00-21зп </option>
+<option value="7ГМУб-00-21оп"> 7ГМУб-00-21оп </option>
+<option value="7ГМУб-00-31зп"> 7ГМУб-00-31зп </option>
+<option value="7ГМУб-00-31оп"> 7ГМУб-00-31оп </option>
+<option value="7ГМУб-00-41зп"> 7ГМУб-00-41зп </option>
+<option value="7ГМУб-00-41оп"> 7ГМУб-00-41оп </option>
+<option value="7Мб-01-21зп"> 7Мб-01-21зп </option>
+<option value="7Мб-01-21оп"> 7Мб-01-21оп </option>
+<option value="7Мб-01-22зп"> 7Мб-01-22зп </option>
+<option value="7Мб-01-31зп"> 7Мб-01-31зп </option>
+<option value="7Мб-01-32зп"> 7Мб-01-32зп </option>
+<option value="7Мб-01-41зп"> 7Мб-01-41зп </option>
+<option value="7Мб-01-41оп"> 7Мб-01-41оп </option>
+<option value="7Мб-01-51зп"> 7Мб-01-51зп </option>
+<option value="7Мб-05-41оп"> 7Мб-05-41оп </option>
+<option value="7Мб-05-51зп"> 7Мб-05-51зп </option>
+<option value="7Мб-05-52зп"> 7Мб-05-52зп </option>
+<option value="7Мм-01-21оп"> 7Мм-01-21оп </option>
+<option value="7Мпб-00-11зп"> 7Мпб-00-11зп </option>
+<option value="7УПб-01-21зп"> 7УПб-01-21зп </option>
+<option value="7УПб-01-31оп"> 7УПб-01-31оп </option>
+<option value="7УПб-01-41оп"> 7УПб-01-41оп </option>
+<option value="7УПб-01-51зп"> 7УПб-01-51зп </option>
+<option value="7УПм-01-21оп"> 7УПм-01-21оп </option>
+<option value="7УПпб-01-11зп"> 7УПпб-01-11зп </option>
+<option value="7УПпб-01-11оп"> 7УПпб-01-11оп </option>
+<option value="7ЭБ-01-11оп"> 7ЭБ-01-11оп </option>
+<option value="7ЭБ-01-21оп"> 7ЭБ-01-21оп </option>
+<option value="7ЭБ-01-31оп"> 7ЭБ-01-31оп </option>
+<option value="7ЭБ-01-41оп"> 7ЭБ-01-41оп </option>
+<option value="7ЭБ-01-51оп"> 7ЭБ-01-51оп </option>
+<option value="7Эб-03-51зп"> 7Эб-03-51зп </option>
+<option value="7Эб-04-11зп"> 7Эб-04-11зп </option>
+<option value="7Эб-04-11оп"> 7Эб-04-11оп </option>
+<option value="7Эб-04-21зп"> 7Эб-04-21зп </option>
+<option value="7Эб-04-21оп"> 7Эб-04-21оп </option>
+<option value="7Эб-04-22зп"> 7Эб-04-22зп </option>
+<option value="7Эб-04-31зп"> 7Эб-04-31зп </option>
+<option value="7Эб-04-31оп"> 7Эб-04-31оп </option>
+<option value="7Эб-04-41зп"> 7Эб-04-41зп </option>
+<option value="7Эб-04-41оп"> 7Эб-04-41оп </option>
+<option value="7Эб-04-42оп"> 7Эб-04-42оп </option>
+<option value="7Эб-04-51зп"> 7Эб-04-51зп </option>
+<option value="7Эб-04-52зп"> 7Эб-04-52зп </option>
+<option value="7Эм-01-11оп"> 7Эм-01-11оп </option>
+<option value="7Эм-01-21оп"> 7Эм-01-21оп </option>
+<option value="9АФКб-01-11зп"> 9АФКб-01-11зп </option>
+<option value="9АФКб-01-21зп"> 9АФКб-01-21зп </option>
+<option value="9АФКб-02-41зп"> 9АФКб-02-41зп </option>
+<option value="9АФКб-02-51зп"> 9АФКб-02-51зп </option>
+<option value="9АФКм-01-11зп"> 9АФКм-01-11зп </option>
+<option value="9АФКм-01-21зп"> 9АФКм-01-21зп </option>
+<option value="9Бб-01-11оп"> 9Бб-01-11оп </option>
+<option value="9Бб-01-21оп"> 9Бб-01-21оп </option>
+<option value="9Бб-01-31оп"> 9Бб-01-31оп </option>
+<option value="9Бб-01-41оп"> 9Бб-01-41оп </option>
+<option value="9ПДОм-04-11зп"> 9ПДОм-04-11зп </option>
+<option value="9ПДОм-04-21оп"> 9ПДОм-04-21оп </option>
+<option value="9ПДОпб-12-21оп"> 9ПДОпб-12-21оп </option>
+<option value="9ПДОпб-12-31оп"> 9ПДОпб-12-31оп </option>
+<option value="9РТб-00-31зп"> 9РТб-00-31зп </option>
+<option value="9РТб-00-41зп"> 9РТб-00-41зп </option>
+<option value="9РТб-00-51зп"> 9РТб-00-51зп </option>
+<option value="9ФКб-01-11оп"> 9ФКб-01-11оп </option>
+<option value="9ФКб-01-41оп"> 9ФКб-01-41оп </option>
+<option value="9ФКм-01-11оп"> 9ФКм-01-11оп </option>
+<option value="9ФКм-01-21оп"> 9ФКм-01-21оп </option>
+</select>
+<form name="selecter2" action="_student.php" method="post" ><select name="ss" size=1>
+<option value=1>1 семестр 2016-17</option><option value=2 SELECTED >2 семестр 2016-17</option></select>&nbsp;<input name="mode" type="submit" value="Расписание занятий">&nbsp;<input name="mode" type="submit" value="Расписание экзаменов">&nbsp;</form>
+</body></html><!-- <div align=center><h1><b>Расписание занятий группы 1ПИб-01-41оп, семестр 2</b></h1> </p> -->
+<!-- <div align=center><h3><b><font color=red>Проект расписания<br> (окончательный вариант появится после 01.02.2005)</font><br></h3><h1>Расписание занятий группы 1ПИб-01-41оп<br />2016-17 уч.год, семестр 2</b></h1> </p> -->
+
+<div align=center><h3><font color=orangered>Проект расписания. Возможны изменения.</font></h3><h1>Расписание занятий группы 1ПИб-01-41оп<br />2016-17 уч.год, семестр 2</b></h1>
+
+<table border='1' cellspacing='1' cellpadding='0'>
+<tr align="center">
+<td bgcolor=#8888FF>День</td><td />
+<td bgcolor=#8888FF>Время</td><td />
+<td bgcolor=#8888FF>Дисциплина</td><td />
+<td bgcolor=#8888FF>Неделя</td><td />
+<td bgcolor=#8888FF>ч/н</td><td />
+<td bgcolor=#8888FF>Преподаватель</td><td />
+<td bgcolor=#8888FF>Ауд/Адрес</td><td />
+ </tr>
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Безопасность жизнедеятельности&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Кислюк О.А. ст преп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;55 Дзер.30&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Межкультурная коммуникация (на иностранном языке)&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Чистякова В.В. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;703 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Безопасность жизнедеятельности&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 26 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Кислюк О.А. ст преп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;55 Дзер.30&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Организация производства&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 24&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Виноградова Л.Н. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;212 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Межкультурная коммуникация (на иностранном языке)&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Чистякова В.В. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;703 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Межкультурная коммуникация (на иностранном языке)&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 26 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Чистякова В.В. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;703 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Организация производства&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 24&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Виноградова Л.Н. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;212 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Межкультурная коммуникация (на иностранном языке)&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Чистякова В.В. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;703 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Организация производства&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Виноградова Л.Н. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;212 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Организация производства&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Виноградова Л.Н. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;212 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Безопасность жизнедеятельности&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Кислюк О.А. ст преп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;55 Дзер.30&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Научно-исследовательская работа студента&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;228 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Научно-исследовательская работа студента&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;228 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Научно-исследовательская работа студента&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;228 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Межкультурная коммуникация (на иностранном языке)&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Чистякова В.В. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;703 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Межкультурная коммуникация (на иностранном языке)&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Чистякова В.В. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;703 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Организация производства&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Виноградова Л.Н. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;212 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Межкультурная коммуникация (на иностранном языке)&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Чистякова В.В. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;703 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Межкультурная коммуникация (на иностранном языке)&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Чистякова В.В. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;703 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Организация производства&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Виноградова Л.Н. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;212 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Управление программными проектами&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 24&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;228 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Управление программными проектами&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;228 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Управление программными проектами&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;218а Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Управление программными проектами&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;218а Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Управление программными проектами&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;218а Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Управление программными проектами&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;218а Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Управление программными проектами&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;228 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Управление программными проектами&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 24&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Ершов Е.В. зав каф&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;228 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Межкультурная коммуникация (на иностранном языке)&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Чистякова В.В. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;703 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Безопасность жизнедеятельности&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Кислюк О.А. ст преп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;55 Дзер.30&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Безопасность жизнедеятельности&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Кислюк О.А. ст преп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;55 Дзер.30&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Безопасность жизнедеятельности&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Кислюк О.А. ст преп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;55 Дзер.30&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компонентное программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Варфоломеев И.А. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компонентное программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 24&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Варфоломеев И.А. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компонентное программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Варфоломеев И.А. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компонентное программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Варфоломеев И.А. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компонентное программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Варфоломеев И.А. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;р.ч. Компонентное программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Варфоломеев И.А. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;зач Компонентное программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;Варфоломеев И.А. доцент&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+</table>
+<script language="Javascript1.2">
+var message = "Распечатать эту страницу";
+function printpage() {window.print();}
+document.write("<form><input type=button "
++"value=\""+message+"\" onClick=\"printpage()\"></form>");
+</script>
+<FONT COLOR="white" SIZE=4>Последнее обновление 14.02.2017 6:41:50 </Font><P>
+
+
+
+<p class=MsoNormal>
+<span style='font-size:8.0pt;style='color:#FAFAFA'>
+<a href="mailto:Watrik@chsu.ru"><span
+lang=RU style='color:#FAFAFA;mso-ansi-language:RU'>Powered by
+Watrik &copy; 2003</span></a></span><span style='color:#FAFAFA;
+mso-ansi-language:EN-US'> <span lang=RU><o:p></o:p></span></span></p>
+
+<script>
+function openProg() 
+{ 
+ window.location.href = 'admin.php'; 
+}
+</script>
+<a onclick="openProg()"><font size=1 color="white">Админка<font></a>
+</body></html>

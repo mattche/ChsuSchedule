@@ -35,14 +35,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Network\EncodingUtility.cs" />
-    <Compile Include="Network\IScheduleContentSource.cs" />
-    <Compile Include="IScheduleDataSource.cs" />
+    <Compile Include="ChsuCalendarCalculator.cs" />
+    <Compile Include="IStudentScheduleRepository.cs" />
+    <Compile Include="Parser\IScheduleParser.cs" />
+    <Compile Include="Parser\ScheduleParser.cs" />
+    <Compile Include="Parser\StudentExamScheduleRecord.cs" />
+    <Compile Include="Periodicity.cs" />
+    <Compile Include="ScheduleContentSourceFactory.cs" />
+    <Compile Include="StudentScheduleRepository.cs" />
+    <Compile Include="StudentSchedule.cs" />
+    <Compile Include="Html\EncodingUtility.cs" />
+    <Compile Include="Html\IScheduleContentSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScheduleMode.cs" />
-    <Compile Include="StudentClassesScheduleData.cs" />
-    <Compile Include="ScheduleRepository.cs" />
-    <Compile Include="Network\WebScheduleContentSource.cs" />
+    <Compile Include="Html\WebScheduleContentSource.cs" />
+    <Compile Include="Parser\StudentClassesScheduleRecord.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">

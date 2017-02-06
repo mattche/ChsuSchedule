@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using System.Net.Http;
 
-namespace ChsuSchedule.Data
+namespace ChsuSchedule.Data.Html
 {
 	sealed class WebScheduleContentSource : IScheduleContentSource
 	{
@@ -11,9 +11,9 @@ namespace ChsuSchedule.Data
 			return await GetScheduleContentCoreAsync(group, semester, mode, STUDENT_URL);
 		}
 
-		public async Task<string> GetTeacherScheduleContentAsync(string group, int semester, ScheduleMode mode)
+		public async Task<string> GetTeacherScheduleContentAsync(string teacher, int semester, ScheduleMode mode)
 		{
-			return await GetScheduleContentCoreAsync(group, semester, mode, TEACHER_URL);
+			return await GetScheduleContentCoreAsync(teacher, semester, mode, TEACHER_URL);
 		}
 
 		public string GetStudentScheduleContent(string group, int semester, ScheduleMode mode)
@@ -21,17 +21,17 @@ namespace ChsuSchedule.Data
 			return GetStudentScheduleContentAsync(group, semester, mode).Result;
 		}
 
-		public string GetTeacherScheduleContent(string group, int semester, ScheduleMode mode)
+		public string GetTeacherScheduleContent(string teacher, int semester, ScheduleMode mode)
 		{
-			return GetTeacherScheduleContentAsync(group, semester, mode).Result;
+			return GetTeacherScheduleContentAsync(teacher, semester, mode).Result;
 		}
 
-		private async Task<string> GetScheduleContentCoreAsync(string group, int semester, ScheduleMode mode, string url)
+		private async Task<string> GetScheduleContentCoreAsync(string entity, int semester, ScheduleMode mode, string url)
 		{
-			var groupEnc = EncodingUtility.UrlWindowsEncode(group);
+			var entityEnc = EncodingUtility.UrlWindowsEncode(entity);
 			var modeEnc = EncodingUtility.UrlWindowsEncode(mode.GetName());
 			var content = new StringContent(
-				$"gr={groupEnc}&ss={semester}&mode={modeEnc}",
+				$"gr={entityEnc}&ss={semester}&mode={modeEnc}",
 				EncodingUtility.Encoding,
 				"application/x-www-form-urlencoded");
 

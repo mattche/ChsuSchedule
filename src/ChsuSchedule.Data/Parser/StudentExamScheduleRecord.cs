@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChsuSchedule.Data
+namespace ChsuSchedule.Data.Parser
 {
-	class StudentClassesScheduleData
+	/// <summary>Запись расписания экзаменов студентов.</summary>
+	class StudentExamScheduleRecord
 	{
+		public string Date { get; set; }
+
 		public string Weekday { get; set; }
 
 		public string Duration { get; set; }
 
 		public string Subject { get; set; }
-
-		public string Weeks { get; set; }
-
-		public string Periodicity { get; set; }
 
 		public string Teacher { get; set; }
 

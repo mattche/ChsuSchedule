@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChsuSchedule.Data
 {
-	interface IScheduleDataSource
+	public enum Periodicity
 	{
+		Even,
+		Odd,
+		Weekly
 	}
 }

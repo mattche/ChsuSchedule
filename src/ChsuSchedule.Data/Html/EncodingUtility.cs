@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Text;
 
-namespace ChsuSchedule.Data
+namespace ChsuSchedule.Data.Html
 {
 	/// <summary>Костыль для кодирования значений форм.</summary>
-	static class EncodingUtility
+	public static class EncodingUtility
 	{
 		public static string UrlWindowsEncode(string value)
 		{

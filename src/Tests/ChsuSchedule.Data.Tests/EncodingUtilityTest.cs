@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using NUnit.Framework;
 
-namespace ChsuSchedule.Data.Tests
+namespace ChsuSchedule.Data.Html.Tests
 {
 	[TestFixture]
 	class EncodingUtilityTest : AssertionHelper
