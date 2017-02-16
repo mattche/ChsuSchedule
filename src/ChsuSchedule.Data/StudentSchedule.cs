@@ -22,13 +22,13 @@ namespace ChsuSchedule.Data
 
 	public class StudentDaySchedule
 	{
-		public StudentDaySchedule(DayOfWeek weekday, IEnumerable<StudentDayScheduleRow> rows)
+		public StudentDaySchedule(DateTime date, IEnumerable<StudentDayScheduleRow> rows)
 		{
-			Weekday = weekday;
+			Date = date;
 			Rows = new List<StudentDayScheduleRow>(rows);
 		}
 
-		public DayOfWeek Weekday { get; set; }
+		public DateTime Date { get; set; }
 
 		public IList<StudentDayScheduleRow> Rows { get; }
 	}
@@ -42,7 +42,5 @@ namespace ChsuSchedule.Data
 		public string Teacher { get; set; }
 
 		public string Classroom { get; set; }
-
-		public DateTime Date { get; set; }
 	}
 }

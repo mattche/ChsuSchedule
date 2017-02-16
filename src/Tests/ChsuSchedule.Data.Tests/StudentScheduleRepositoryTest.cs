@@ -19,7 +19,6 @@ namespace ChsuSchedule.Data.Tests
 		{
 			var expectedRow = new StudentDayScheduleRow
 			{
-				Date = new DateTime(2017, 2, 14),
 				Classroom = "212 Сов.8",
 				Duration = "13-30 - 15-00",
 				Subject = "лр Организация производства",
@@ -39,7 +38,6 @@ namespace ChsuSchedule.Data.Tests
 			var schedule = rep.FetchSchedule(_group, new DateTime(2017, 02, 14));
 			var daySchedule = schedule.DaySchedules[1];
 
-			Expect(daySchedule.Rows[0].Date, Is.EqualTo(expectedRow.Date));
 			Expect(daySchedule.Rows[0].Classroom, Is.EqualTo(expectedRow.Classroom));
 			Expect(daySchedule.Rows[0].Duration, Is.EqualTo(expectedRow.Duration));
 			Expect(daySchedule.Rows[0].Subject, Is.EqualTo(expectedRow.Subject));
@@ -50,10 +48,10 @@ namespace ChsuSchedule.Data.Tests
 
 		#region Test data
 
-		const string _filename = @"Tests\ChsuSchedule.Data.Tests\data\raspisanie.html";
-		const string _group = "1ПИб-01-41оп";
-		const int _sem = 2;
-		const ScheduleMode _mode = ScheduleMode.ClassesSchedule;
+		private const string _filename = @"Tests\ChsuSchedule.Data.Tests\data\raspisanie.html";
+		private const string _group = "1ПИб-01-41оп";
+		private const int _sem = 2;
+		private const ScheduleMode _mode = ScheduleMode.ClassesSchedule;
 
 		#endregion
 	}

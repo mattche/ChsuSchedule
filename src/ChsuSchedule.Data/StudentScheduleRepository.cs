@@ -85,10 +85,9 @@ namespace ChsuSchedule.Data
 							Duration = rec.Duration,
 							Subject = rec.Subject,
 							Classroom = rec.Classroom,
-							Teacher = rec.Teacher,
-							Date = ChsuCalendarCalculator.CalcDate(date, wd)
+							Teacher = rec.Teacher
 						});
-					return new StudentDaySchedule(wd, rows);
+					return new StudentDaySchedule(ChsuCalendarCalculator.CalcDate(date, wd), rows);
 				});
 
 			return new StudentWeekSchedule(weekNum, daySchedules);
