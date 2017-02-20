@@ -3079,8 +3079,8 @@ namespace ChsuSchedule.Droid
 			// aapt resource value: 0x7f0a015a
 			public const int Animation_Design_BottomSheetDialog = 2131362138;
 			
-			// aapt resource value: 0x7f0a0174
-			public const int AppCompatDialogStyle = 2131362164;
+			// aapt resource value: 0x7f0a0175
+			public const int AppCompatDialogStyle = 2131362165;
 			
 			// aapt resource value: 0x7f0a00a5
 			public const int Base_AlertDialog_AppCompat = 2131361957;
@@ -4182,6 +4182,9 @@ namespace ChsuSchedule.Droid
 			
 			// aapt resource value: 0x7f0a0016
 			public const int Widget_MediaRouter_MediaRouteButton = 2131361814;
+			
+			// aapt resource value: 0x7f0a0174
+			public const int datepicker = 2131362164;
 			
 			static Style()
 			{

@@ -4,7 +4,7 @@ using ChsuSchedule.Data.Html;
 
 namespace ChsuSchedule.Data
 {
-	public static class ScheduleContentSourceFactory
+	static class ScheduleContentSourceFactory
 	{
 		public static IScheduleContentSource CreateWebSource()
 		{

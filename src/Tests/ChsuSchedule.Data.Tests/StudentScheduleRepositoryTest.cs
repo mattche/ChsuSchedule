@@ -48,7 +48,7 @@ namespace ChsuSchedule.Data.Tests
 
 		#region Test data
 
-		private const string _filename = @"Tests\ChsuSchedule.Data.Tests\data\raspisanie.html";
+		private readonly string _filename = $@"Tests\ChsuSchedule.Data.Tests\data\raspisanie.txt";
 		private const string _group = "1ПИб-01-41оп";
 		private const int _sem = 2;
 		private const ScheduleMode _mode = ScheduleMode.ClassesSchedule;

@@ -5,27 +5,30 @@ using System.Text;
 
 using Xamarin.Forms;
 
+using ChsuSchedule.ViewModels;
+using ChsuSchedule.Views;
+
 namespace ChsuSchedule
 {
 	public class App : Application
 	{
 		public App()
 		{
-			// The root page of your application
-			var content = new ContentPage
-			{
-				Title = "ChsuSchedule",
-				Content = new StackLayout
-				{
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			//The root page of your application
+			var content = new HomePage();
+			//{
+			//	Title = "ChsuScheduleEEE",
+			//	Content = new StackLayout
+			//	{
+			//		VerticalOptions = LayoutOptions.Center,
+			//		Children = {
+			//			new Label {
+			//				HorizontalTextAlignment = TextAlignment.Center,
+			//				Text = "Welcome to Xamarin Forms!"
+			//			}
+			//		}
+			//	}
+			//};
 
 			MainPage = new NavigationPage(content);
 		}

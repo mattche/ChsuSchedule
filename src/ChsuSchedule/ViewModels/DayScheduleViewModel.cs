@@ -1,22 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 using ChsuSchedule.Data;
 
 namespace ChsuSchedule.ViewModels
 {
-	class DayScheduleViewModel : ViewModelBase
+	public class DayScheduleViewModel : ViewModelBase
 	{
+		public DayScheduleViewModel(StudentDaySchedule daySchedule)
+		{
+			DaySchedule = daySchedule;
+			ScheduleRows = new ObservableCollection<StudentDayScheduleRow>(daySchedule.Rows);
+		}
+
 		public DateTime Date
 		{
-			get { return Model.Date; }
+			get { return DaySchedule.Date; }
 		}
 
-		public IList<StudentDayScheduleRow> ScheduleRows
-		{
-			get { return Model.Rows; }
-		}
+		public ObservableCollection<StudentDayScheduleRow> ScheduleRows { get; }
 
-		public StudentDaySchedule Model { get; set; }
+		private StudentDaySchedule DaySchedule { get; set; }
 	}
 }
