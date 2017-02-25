@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using System.Net.Http;
+
 using ChsuSchedule.Data.Parser;
 using ChsuSchedule.Data.Html;
 

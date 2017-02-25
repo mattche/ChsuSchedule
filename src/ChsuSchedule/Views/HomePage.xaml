@@ -13,7 +13,7 @@
 			<DatePicker Date="{Binding SelectedDate}" HorizontalOptions="EndAndExpand"/>
 		</StackLayout>
 		<StackLayout Orientation="Horizontal" >
-			<Label Text="На неделю" FontSize="Large"/>
+			<Label Text="На неделю" FontSize="Medium"/>
 			<Switch IsToggled="{Binding ShowAllWeek}" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>	
 		</StackLayout>
 		
@@ -21,7 +21,9 @@
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<ViewCell>
-						<Label Text="{Binding Date}"></Label>
+						<ViewCell.View>
+							<Label Text="{Binding Date}"></Label>
+						</ViewCell.View>
 					</ViewCell>
 				</DataTemplate>
 			</ListView.ItemTemplate>

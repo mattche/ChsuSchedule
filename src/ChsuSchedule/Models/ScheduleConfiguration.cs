@@ -10,7 +10,7 @@ namespace ChsuSchedule.Models
 	{
 		static class Defaults
 		{
-			public const string GROUP = "1ПИб-01-41-оп";
+			public const string GROUP = "1ПИб-01-41оп";
 			public const bool SHOW_ALL_WEEK = true;
 			public static readonly DateTime DATE = DateTime.Now;
 		}

@@ -21,12 +21,16 @@ namespace ChsuSchedule.Data.Tests
 		[Test]
 		public void CalcWeekNumberTest()
 		{
-			var dt = new DateTime(2017, 2, 7);
-			Expect(ChsuCalendarCalculator.CalcWeekNumber(dt), Is.EqualTo(24));
-			dt = new DateTime(2017, 2, 9);
-			Expect(ChsuCalendarCalculator.CalcWeekNumber(dt), Is.EqualTo(24));
+			var dt = new DateTime(2016, 9, 2);
+			Expect(ChsuCalendarCalculator.CalcWeekNumber(dt), Is.EqualTo(1));
+			dt = new DateTime(2016, 9, 4);
+			Expect(ChsuCalendarCalculator.CalcWeekNumber(dt), Is.EqualTo(1));
+			dt = new DateTime(2016, 9, 5);
+			Expect(ChsuCalendarCalculator.CalcWeekNumber(dt), Is.EqualTo(2));
 			dt = new DateTime(2017, 2, 13);
 			Expect(ChsuCalendarCalculator.CalcWeekNumber(dt), Is.EqualTo(25));
+			dt = new DateTime(2017, 2, 26);
+			Expect(ChsuCalendarCalculator.CalcWeekNumber(dt), Is.EqualTo(26));
 		}
 
 		[Test]

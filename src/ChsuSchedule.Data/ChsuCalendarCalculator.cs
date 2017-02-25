@@ -25,13 +25,25 @@ namespace ChsuSchedule.Data
 		public static int CalcWeekNumber(DateTime date)
 		{
 			var begYear = date.Month < 9 ? date.Year - 1 : date.Year;
-			var delta = date.Subtract(new DateTime(begYear, 9, 1));
-			var number = delta.Days / 7;
-			if (delta.Days % 7 > 0)
+			var begMonth = 9;
+			var begDate = new DateTime(begYear, begMonth, 1);
+			if(begDate.DayOfWeek != DayOfWeek.Monday)
 			{
-				++number;
+				var knownBegWeekDayNum = begDate.DayOfWeek == DayOfWeek.Sunday ? 7 : (int)begDate.DayOfWeek;
+				var begDay = begDate.Day - knownBegWeekDayNum + 1;
+				
+				if(begDay < 0)
+				{
+					--begMonth;
+					begDay = DateTime.DaysInMonth(begYear, begMonth) - (-begDay);
+				}
+
+				begDate = new DateTime(begYear, begMonth, begDay);
 			}
-			return ++number;
+			var delta = date.Subtract(begDate);
+			var number = delta.Days / 7 + 1;
+
+			return number;
 		}
 
 		/// <summary>Вычисляет дату указанного дня недели, определяемой указанной датой.</summary>

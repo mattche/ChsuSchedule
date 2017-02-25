@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Net.Http;
 
 using Xamarin.Forms;
 
@@ -65,6 +66,7 @@ namespace ChsuSchedule.ViewModels
 			ScheduleDays.Clear();
 			var rep = new StudentScheduleRepository();
 			var schedule = await rep.FetchScheduleAsync(SelectedGroup, SelectedDate);
+			if (schedule == null || schedule?.DaySchedules == null) return;
 			foreach (var day in schedule.DaySchedules)
 			{
 				ScheduleDays.Add(new DayScheduleViewModel(day));

@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using System.Net.Http;
 
+using ModernHttpClient;
+
 namespace ChsuSchedule.Data.Html
 {
 	sealed class WebScheduleContentSource : IScheduleContentSource
@@ -38,7 +40,7 @@ namespace ChsuSchedule.Data.Html
 			using (var client = new HttpClient())
 			{
 				client.BaseAddress = new Uri(BASE_URL);
-				var response = await client.PostAsync(url, content);
+				var response = await client.PostAsync(url, content).ConfigureAwait(false);
 				response.EnsureSuccessStatusCode();
 
 				return await response.Content.ReadAsStringAsync();
