@@ -3,31 +3,48 @@
 						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 						 x:Class="ChsuSchedule.Views.HomePage"
 						 Title="Расписание ЧГУ">
-	<StackLayout Padding="10,10,10,10">
+	<StackLayout Padding="10, 10, 10, 10">
 		<StackLayout Orientation="Horizontal">
-			<Label Text="Группа"/>
-			<Entry Placeholder="Группа" Text="{Binding SelectedGroup}" HorizontalOptions="FillAndExpand" FontSize="Medium"/>
+			<Label Text="Группа" FontSize="Medium"/>
+			<Entry Placeholder="Группа" Text="{Binding SelectedGroup}" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" FontSize="Medium"/>
 		</StackLayout>
 		<StackLayout Orientation="Horizontal">
 			<Label Text="Дата" FontSize="Medium"/>
-			<DatePicker Date="{Binding SelectedDate}" HorizontalOptions="EndAndExpand"/>
+			<DatePicker Date="{Binding SelectedDate}" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
 		</StackLayout>
 		<StackLayout Orientation="Horizontal" >
 			<Label Text="На неделю" FontSize="Medium"/>
 			<Switch IsToggled="{Binding ShowAllWeek}" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>	
 		</StackLayout>
-		
-		<ListView ItemsSource="{Binding ScheduleDays}">
+
+		<Button Text="Расписание" Command="{Binding ShowScheduleCommand}" CommandParameter="{Binding Configuration}"/>
+
+		<!--<ListView ItemsSource="{Binding ScheduleDays}" IsGroupingEnabled="True" RowHeight="60">
+			<ListView.GroupHeaderTemplate>
+				<DataTemplate>
+					<ViewCell Height="25">
+						<StackLayout Padding="5">
+							<Label Text="{Binding Key, StringFormat='{0:ddd, d MMMM}'}" FontSize="Medium" FontAttributes="Bold"/>
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.GroupHeaderTemplate>
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<ViewCell>
 						<ViewCell.View>
-							<Label Text="{Binding Date}"></Label>
+							<StackLayout Orientation="Vertical" Spacing="5" >
+								<Label Text="{Binding DurationAndSubject}"/>
+								<StackLayout Orientation="Horizontal">
+									<Label Text="{Binding Teacher}"/>
+									<Label Text="{Binding Classroom}"/>
+								</StackLayout>	
+							</StackLayout>
 						</ViewCell.View>
 					</ViewCell>
 				</DataTemplate>
 			</ListView.ItemTemplate>
-		</ListView>
+		</ListView>-->
 		
 		<!--<TableView Intent="Settings">
 			<TableView.Root>

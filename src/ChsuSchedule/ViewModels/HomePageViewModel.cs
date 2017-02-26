@@ -11,6 +11,7 @@ using Xamarin.Forms;
 
 using ChsuSchedule.Data;
 using ChsuSchedule.Models;
+using ChsuSchedule.Views;
 
 namespace ChsuSchedule.ViewModels
 {
@@ -18,61 +19,57 @@ namespace ChsuSchedule.ViewModels
 	{
 		public HomePageViewModel()
 		{
-			_scheduleConfig = new ScheduleConfiguration();
-			ScheduleDays = new ObservableCollection<DayScheduleViewModel>();
-			FillSchedule();
+			Configuration = new ScheduleConfiguration();
+			ShowScheduleCommand = new Command(ShowSchedule);
 		}
 
 		#region Properties
 
 		public string SelectedGroup
 		{
-			get { return _scheduleConfig.Group; }
+			get { return Configuration.Group; }
 			set
 			{
-				_scheduleConfig.Group = value;
+				Configuration.Group = value;
 				OnPropertyChanged(nameof(SelectedGroup));
 			}
 		}
 
 		public DateTime SelectedDate
 		{
-			get { return _scheduleConfig.Date; }
+			get { return Configuration.Date; }
 			set
 			{
-				_scheduleConfig.Date = value;
+				Configuration.Date = value;
 				OnPropertyChanged(nameof(SelectedDate));
 			}
 		}
 
 		public bool ShowAllWeek
 		{
-			get { return _scheduleConfig.ShowAllWeek; }
+			get { return Configuration.ShowAllWeek; }
 			set
 			{
-				_scheduleConfig.ShowAllWeek = value;
+				Configuration.ShowAllWeek = value;
 				OnPropertyChanged(nameof(ShowAllWeek));
 			}
 		}
 
-		public ObservableCollection<DayScheduleViewModel> ScheduleDays { get; set; }
+		public ICommand ShowScheduleCommand { protected set; get; }
 
-		public ICommand FillScheduleCommand { protected set; get; }
+		public INavigation Navigation { get; set; }
+
+		public ScheduleConfiguration Configuration { get; set; }
 
 		#endregion
 
-		private async void FillSchedule()
+		private void ShowSchedule(object scheduleConfiguration)
 		{
-			ScheduleDays.Clear();
-			var rep = new StudentScheduleRepository();
-			var schedule = await rep.FetchScheduleAsync(SelectedGroup, SelectedDate);
-			if (schedule == null || schedule?.DaySchedules == null) return;
-			foreach (var day in schedule.DaySchedules)
+			var config = scheduleConfiguration as ScheduleConfiguration;
+			if (config != null)
 			{
-				ScheduleDays.Add(new DayScheduleViewModel(day));
+				Navigation.PushAsync(new SchedulePage(Configuration));
 			}
 		}
-
-		private ScheduleConfiguration _scheduleConfig;
 	}
 }
