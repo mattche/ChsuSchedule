@@ -4,58 +4,31 @@
 						 x:Class="ChsuSchedule.Views.HomePage"
 						 Title="Расписание ЧГУ">
 	<StackLayout Padding="10, 10, 10, 10">
+		<StackLayout Orientation="Horizontal" >
+			<Label Text="Расписание преподавателей" />
+			<Switch IsToggled="{Binding ShowAllWeek}" HorizontalOptions=""/>	
+			<Label Text="Расписание студентов" />
+		</StackLayout>
 		<StackLayout Orientation="Horizontal">
-			<Label Text="Группа" FontSize="Medium"/>
+			<Label Text="Группа" />
 			<Entry Placeholder="Группа" Text="{Binding SelectedGroup}" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" FontSize="Medium"/>
 		</StackLayout>
 		<StackLayout Orientation="Horizontal">
-			<Label Text="Дата" FontSize="Medium"/>
+			<Label Text="Дата" />
 			<DatePicker Date="{Binding SelectedDate}" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
 		</StackLayout>
 		<StackLayout Orientation="Horizontal" >
-			<Label Text="На неделю" FontSize="Medium"/>
-			<Switch IsToggled="{Binding ShowAllWeek}" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>	
-		</StackLayout>
+			<Label Text="На день"/>
+			<Switch IsToggled="{Binding ShowAllWeek}" />	
+			<Label Text="На неделю"/>
+		</StackLayout>	
 
-		<Button Text="Расписание" Command="{Binding ShowScheduleCommand}" CommandParameter="{Binding Configuration}"/>
+		<Button Text="Расписание" 
+						Command="{Binding ShowScheduleCommand}" 
+						CommandParameter="{Binding Configuration}" 
+						IsEnabled="{Binding IsNotBusy}"/>
 
-		<!--<ListView ItemsSource="{Binding ScheduleDays}" IsGroupingEnabled="True" RowHeight="60">
-			<ListView.GroupHeaderTemplate>
-				<DataTemplate>
-					<ViewCell Height="25">
-						<StackLayout Padding="5">
-							<Label Text="{Binding Key, StringFormat='{0:ddd, d MMMM}'}" FontSize="Medium" FontAttributes="Bold"/>
-						</StackLayout>
-					</ViewCell>
-				</DataTemplate>
-			</ListView.GroupHeaderTemplate>
-			<ListView.ItemTemplate>
-				<DataTemplate>
-					<ViewCell>
-						<ViewCell.View>
-							<StackLayout Orientation="Vertical" Spacing="5" >
-								<Label Text="{Binding DurationAndSubject}"/>
-								<StackLayout Orientation="Horizontal">
-									<Label Text="{Binding Teacher}"/>
-									<Label Text="{Binding Classroom}"/>
-								</StackLayout>	
-							</StackLayout>
-						</ViewCell.View>
-					</ViewCell>
-				</DataTemplate>
-			</ListView.ItemTemplate>
-		</ListView>-->
-		
-		<!--<TableView Intent="Settings">
-			<TableView.Root>
-				<TableRoot>
-					<TableSection Title="Настройки">
-						<EntryCell Label="Группа" Placeholder="Группа" Text="{Binding SelectedGroup}" />
-						<SwitchCell On="{Binding ShowAllWeek}" Text="На неделю"/>
-					</TableSection>
-				</TableRoot>
-			</TableView.Root>
-		</TableView>-->
-		
+		<ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+
 	</StackLayout>
 </ContentPage>

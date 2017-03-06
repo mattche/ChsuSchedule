@@ -10,18 +10,21 @@ using System.Net.Http;
 using Xamarin.Forms;
 
 using ChsuSchedule.Data;
-using ChsuSchedule.Models;
 using ChsuSchedule.Views;
 
 namespace ChsuSchedule.ViewModels
 {
 	public class HomePageViewModel : ViewModelBase
 	{
+		#region .ctor
+
 		public HomePageViewModel()
 		{
 			Configuration = new ScheduleConfiguration();
-			ShowScheduleCommand = new Command(ShowSchedule);
+			ShowScheduleCommand = new Command(async (param) => await LoadScheduleAsync(param));
 		}
+
+		#endregion
 
 		#region Properties
 
@@ -31,7 +34,7 @@ namespace ChsuSchedule.ViewModels
 			set
 			{
 				Configuration.Group = value;
-				OnPropertyChanged(nameof(SelectedGroup));
+				RisePropertyChanged(nameof(SelectedGroup));
 			}
 		}
 
@@ -41,7 +44,7 @@ namespace ChsuSchedule.ViewModels
 			set
 			{
 				Configuration.Date = value;
-				OnPropertyChanged(nameof(SelectedDate));
+				RisePropertyChanged(nameof(SelectedDate));
 			}
 		}
 
@@ -51,9 +54,22 @@ namespace ChsuSchedule.ViewModels
 			set
 			{
 				Configuration.ShowAllWeek = value;
-				OnPropertyChanged(nameof(ShowAllWeek));
+				RisePropertyChanged(nameof(ShowAllWeek));
 			}
 		}
+
+		public bool IsBusy
+		{
+			get { return _isBusy; }
+			set
+			{
+				_isBusy = value;
+				RisePropertyChanged(nameof(IsBusy));
+				RisePropertyChanged(nameof(IsNotBusy));
+			}
+		}
+
+		public bool IsNotBusy => !IsBusy;
 
 		public ICommand ShowScheduleCommand { protected set; get; }
 
@@ -63,13 +79,57 @@ namespace ChsuSchedule.ViewModels
 
 		#endregion
 
-		private void ShowSchedule(object scheduleConfiguration)
+		#region Events
+
+		public event EventHandler<string> AlertOccured;
+
+		#endregion
+
+		#region Methods
+
+		private async Task LoadScheduleAsync(object scheduleConfiguration)
 		{
 			var config = scheduleConfiguration as ScheduleConfiguration;
 			if (config != null)
 			{
-				Navigation.PushAsync(new SchedulePage(Configuration));
+				var rep = new StudentScheduleRepository();
+				IsBusy = true;
+				StudentWeekSchedule schedule = null;
+
+				try
+				{
+					schedule = await rep.FetchScheduleAsync(config.Group, config.Date);
+				}
+				catch (Exception exc)
+				{
+					RiseAlertOccured("Не удалось загрузить расписание.");
+					IsBusy = false;
+					return;
+				}
+
+				IsBusy = false;
+
+				if (schedule == null || schedule?.DaySchedules == null)
+				{
+					RiseAlertOccured("Не удалось получить расписание");
+					return;
+				}
+
+				await Navigation.PushAsync(new SchedulePage(new SchedulePageViewModel(schedule)));
 			}
 		}
+
+		private void RiseAlertOccured(string message)
+		{
+			AlertOccured?.Invoke(this, message);
+		}
+
+		#endregion
+
+		#region Data
+
+		private bool _isBusy;
+
+		#endregion
 	}
 }

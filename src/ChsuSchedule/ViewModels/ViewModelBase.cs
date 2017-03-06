@@ -7,7 +7,7 @@ namespace ChsuSchedule.ViewModels
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
 
-		protected void OnPropertyChanged(string name)
+		protected void RisePropertyChanged(string name)
 		{
 			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 		}

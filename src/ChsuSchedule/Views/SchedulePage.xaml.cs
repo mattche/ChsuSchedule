@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 using ChsuSchedule.ViewModels;
-using ChsuSchedule.Models;
+using ChsuSchedule.Data;
 
 namespace ChsuSchedule.Views
 {
 	public partial class SchedulePage : ContentPage
 	{
-		public SchedulePage(ScheduleConfiguration configuration)
+		public SchedulePage(SchedulePageViewModel viewModel)
 		{
 			InitializeComponent();
 
-			BindingContext = new SchedulePageViewModel(configuration);
+			BindingContext = viewModel;
 		}
 	}
 }

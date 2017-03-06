@@ -15,7 +15,14 @@ namespace ChsuSchedule.Views
 		public HomePage()
 		{
 			InitializeComponent();
-			BindingContext = new HomePageViewModel() { Navigation = this.Navigation };
+			var vm = new HomePageViewModel() { Navigation = this.Navigation };
+			BindingContext = vm;
+			vm.AlertOccured += OnAlertOccured;
+		}
+
+		private async void OnAlertOccured(object sender, string e)
+		{
+			await DisplayAlert("Ошибка", e, "OK");
 		}
 	}
 }
