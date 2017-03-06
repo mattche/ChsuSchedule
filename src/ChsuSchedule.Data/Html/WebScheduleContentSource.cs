@@ -2,8 +2,6 @@
 using System.Threading.Tasks;
 using System.Net.Http;
 
-using ModernHttpClient;
-
 namespace ChsuSchedule.Data.Html
 {
 	sealed class WebScheduleContentSource : IScheduleContentSource

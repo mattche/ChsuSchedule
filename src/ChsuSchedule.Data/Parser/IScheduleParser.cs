@@ -8,5 +8,10 @@ namespace ChsuSchedule.Data.Parser
 		/// <param name="htmlContent">HTML-страница расписания занятий студентов.</param>
 		/// <returns>Записи расписания занятий студентов.</returns>
 		IEnumerable<StudentClassesScheduleRecord> ParseStundentClassesSchedule(string htmlContent);
+
+		/// <summary>Выполняет анализ HTML-страницы расписания занятий преподавателей и возвращает записи расписания.</summary>
+		/// <param name="htmlContent">HTML-страница расписания занятий преподавателей.</param>
+		/// <returns>Записи расписания занятий преподавателей.</returns>
+		IEnumerable<TeacherClassesScheduleRecord> ParseTeacherClassesSchedule(string htmlContent);
 	}
 }

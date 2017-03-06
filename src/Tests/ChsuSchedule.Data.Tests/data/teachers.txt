@@ -1,0 +1,1977 @@
+
+	<html>
+	<head>
+	<title>Расписание</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	</head>
+	<body background="fon.jpg" bgcolor=#FFFFFF>
+<table>
+<tr>
+<DIV id="Layer1" style="z-index:10">
+   <form action="_student.php">
+   <INPUT TYPE="submit" ACTION="_student.php" VALUE="Расписание студентов">
+   </form>
+</DIV>
+
+<DIV id="Layer2" style="position:absolute; right:10px; top:10px; width:200px; height:10px; z-index:5">
+<!-- <img align="left" width=420 height=70 src=Elka.jpg alt="скоро новый год"> -->
+<center>
+<b>-={ <font size=5>28</font> - учебная неделя }=-
+Сегодня 07.03.2017</b>
+</center>
+</DIV>
+</tr><tr>
+</table>
+
+<!-- width=307 height=203 --><html><head><title>Расписание занятий</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body>
+<form name="selecter1" action="_prepod.php" method="post"><select name="pr" size=1>
+<option value="Абакшина А.Ю. ст преп"> Абакшина А.Ю. ст преп </option>
+<option value="Агафонова А.Б. ст преп"> Агафонова А.Б. ст преп </option>
+<option value="Адигамов Р.Ш. доцент"> Адигамов Р.Ш. доцент </option>
+<option value="Аксенчик К.В. зав каф"> Аксенчик К.В. зав каф </option>
+<option value="Алексеева Н.В. доцент"> Алексеева Н.В. доцент </option>
+<option value="Алексина Ю.Ю. ст преп"> Алексина Ю.Ю. ст преп </option>
+<option value="Алешина Е.И. доцент"> Алешина Е.И. доцент </option>
+<option value="Андреев А.С. доцент"> Андреев А.С. доцент </option>
+<option value="Андреева Т.А. ст преп"> Андреева Т.А. ст преп </option>
+<option value="Андрощук В.А. доцент"> Андрощук В.А. доцент </option>
+<option value="Антонова З.В. доцент"> Антонова З.В. доцент </option>
+<option value="Антонова Ю.В. доцент"> Антонова Ю.В. доцент </option>
+<option value="Антропова Л.В. проф"> Антропова Л.В. проф </option>
+<option value="Аншелес В.Р. проф"> Аншелес В.Р. проф </option>
+<option value="Апуневич О.А. доцент"> Апуневич О.А. доцент </option>
+<option value="Арсенов В.А. ст преп"> Арсенов В.А. ст преп </option>
+<option value="Арсенова М.А. доцент"> Арсенова М.А. доцент </option>
+<option value="Артамонов А.В. доцент"> Артамонов А.В. доцент </option>
+<option value="Артеменков А.А. доцент"> Артеменков А.А. доцент </option>
+<option value="Арюхина Е.Г. доцент"> Арюхина Е.Г. доцент </option>
+<option value="Асеев А.Ю. доцент"> Асеев А.Ю. доцент </option>
+<option value="Афанасьев Д.В. доцент"> Афанасьев Д.В. доцент </option>
+<option value="Афанасьева Н.Б. зав каф"> Афанасьева Н.Б. зав каф </option>
+<option value="Ашихмин А.Н. доцент"> Ашихмин А.Н. доцент </option>
+<option value="Балицкий С.Н. доцент"> Балицкий С.Н. доцент </option>
+<option value="Балюшина Ю.Л. доцент"> Балюшина Ю.Л. доцент </option>
+<option value="Барычев А.В. ст преп"> Барычев А.В. ст преп </option>
+<option value="Беланова Т.А. ассис"> Беланова Т.А. ассис </option>
+<option value="Белановская Е.В. зав каф"> Белановская Е.В. зав каф </option>
+<option value="Белановский И.П. доцент"> Белановский И.П. доцент </option>
+<option value="Белкова С.В. ст преп"> Белкова С.В. ст преп </option>
+<option value="Белов В.А. доцент"> Белов В.А. доцент </option>
+<option value="Белова А.В. доцент"> Белова А.В. доцент </option>
+<option value="Белова Е.А. ассис"> Белова Е.А. ассис </option>
+<option value="Белозор М.Ю. доцент"> Белозор М.Ю. доцент </option>
+<option value="Беляева О.А. ст преп"> Беляева О.А. ст преп </option>
+<option value="Берцева Т.С. ст преп"> Берцева Т.С. ст преп </option>
+<option value="Биглер С.А. ст преп"> Биглер С.А. ст преп </option>
+<option value="Билева Е.М. ст преп"> Билева Е.М. ст преп </option>
+<option value="Бирюков А.Н. ассис"> Бирюков А.Н. ассис </option>
+<option value="Бирюков Е.Н. доцент"> Бирюков Е.Н. доцент </option>
+<option value="Богомолова А.А. ст преп"> Богомолова А.А. ст преп </option>
+<option value="Болобанова Н.Л. доцент"> Болобанова Н.Л. доцент </option>
+<option value="Борисова Н.А. доцент"> Борисова Н.А. доцент </option>
+<option value="Бочаров Л.О. ассис"> Бочаров Л.О. ассис </option>
+<option value="Браулова М.А. ст преп(р)"> Браулова М.А. ст преп(р) </option>
+<option value="Бубнова О.Н. ст преп"> Бубнова О.Н. ст преп </option>
+<option value="Букина Е.Е. ассис"> Букина Е.Е. ассис </option>
+<option value="Букина И.А. доцент"> Букина И.А. доцент </option>
+<option value="Бурова Л.И. проф"> Бурова Л.И. проф </option>
+<option value="Быков П.М. доцент"> Быков П.М. доцент </option>
+<option value="Ванюгина М.С. доцент"> Ванюгина М.С. доцент </option>
+<option value="Варзунова В.В. ст преп"> Варзунова В.В. ст преп </option>
+<option value="Варфоломеев И.А. доцент"> Варфоломеев И.А. доцент </option>
+<option value="Варфоломеева З.С. декан"> Варфоломеева З.С. декан </option>
+<option value="Василенкова Т.А. ст преп"> Василенкова Т.А. ст преп </option>
+<option value="Васильева Т.П. доцент"> Васильева Т.П. доцент </option>
+<option value="Васильцов В.С. проф"> Васильцов В.С. проф </option>
+<option value="Вахнова Н.В. ст преп"> Вахнова Н.В. ст преп </option>
+<option value="Вересова М.В. ст преп"> Вересова М.В. ст преп </option>
+<option value="Вересова О.В. ст преп"> Вересова О.В. ст преп </option>
+<option value="Веселова Н.Ю. ст преп"> Веселова Н.Ю. ст преп </option>
+<option value="Ветрова Т.А. доцент"> Ветрова Т.А. доцент </option>
+<option value="Викторова О.В. ст преп"> Викторова О.В. ст преп </option>
+<option value="Виноградов А.И. доцент"> Виноградов А.И. доцент </option>
+<option value="Виноградова Л.Н. доцент"> Виноградова Л.Н. доцент </option>
+<option value="Виноградова М.А. зав каф"> Виноградова М.А. зав каф </option>
+<option value="Владимирова О.А доцент"> Владимирова О.А доцент </option>
+<option value="Волков В.Н. ст преп"> Волков В.Н. ст преп </option>
+<option value="Волова М.С. ст преп"> Волова М.С. ст преп </option>
+<option value="Володина Н.В. проф"> Володина Н.В. проф </option>
+<option value="Воробьев В.Ф. доцент"> Воробьев В.Ф. доцент </option>
+<option value="Воробьева И.Н. доцент"> Воробьева И.Н. доцент </option>
+<option value="Воробьева Т.А. доцент"> Воробьева Т.А. доцент </option>
+<option value="Воробьева Т.Б. доцент"> Воробьева Т.Б. доцент </option>
+<option value="Ворожбянов В.Н. доцент"> Ворожбянов В.Н. доцент </option>
+<option value="Всеволодов А.В. ст преп"> Всеволодов А.В. ст преп </option>
+<option value="Габелая Д.И. доцент"> Габелая Д.И. доцент </option>
+<option value="Габова М.В. ст преп"> Габова М.В. ст преп </option>
+<option value="Гайдунко Ю.А. доцент"> Гайдунко Ю.А. доцент </option>
+<option value="Гайсина Э.Х. ст преп"> Гайсина Э.Х. ст преп </option>
+<option value="Галактионова Г.М. доцент"> Галактионова Г.М. доцент </option>
+<option value="Галунова С.Н. доцент"> Галунова С.Н. доцент </option>
+<option value="Ганичева О.Г. доцент"> Ганичева О.Г. доцент </option>
+<option value="Гарбер Э.А. проф"> Гарбер Э.А. проф </option>
+<option value="Гарт М.А. доцент"> Гарт М.А. доцент </option>
+<option value="Гендлина Ю.Б. доцент"> Гендлина Ю.Б. доцент </option>
+<option value="Герасимов А.Ю. ст преп"> Герасимов А.Ю. ст преп </option>
+<option value="Герасимов Р.А. доцент"> Герасимов Р.А. доцент </option>
+<option value="Гольцова Н.В. доцент"> Гольцова Н.В. доцент </option>
+<option value="Гонтарева И.Б. доцент"> Гонтарева И.Б. доцент </option>
+<option value="Гордеев С.В. доцент"> Гордеев С.В. доцент </option>
+<option value="Граф С.В. доцент"> Граф С.В. доцент </option>
+<option value="Грибкова Ю.В. доцент"> Грибкова Ю.В. доцент </option>
+<option value="Григорьев Н.С. доцент"> Григорьев Н.С. доцент </option>
+<option value="Гришин Н.С. ассис"> Гришин Н.С. ассис </option>
+<option value="Грудева Е.А. доцент"> Грудева Е.А. доцент </option>
+<option value="Грудева Е.В. зав каф"> Грудева Е.В. зав каф </option>
+<option value="Грызлов В.С. зав каф"> Грызлов В.С. зав каф </option>
+<option value="Гудина Т.В. проф"> Гудина Т.В. проф </option>
+<option value="Гужавина Т.А. доцент"> Гужавина Т.А. доцент </option>
+<option value="Данилов А.Н. проф"> Данилов А.Н. проф </option>
+<option value="Дворянова М.В. доцент"> Дворянова М.В. доцент </option>
+<option value="Девятилова Т.В. ст преп"> Девятилова Т.В. ст преп </option>
+<option value="Демидов С.В. доцент"> Демидов С.В. доцент </option>
+<option value="Демидова Н.В. доцент"> Демидова Н.В. доцент </option>
+<option value="Денисова И.А. ст преп"> Денисова И.А. ст преп </option>
+<option value="Денисова О.А. проф"> Денисова О.А. проф </option>
+<option value="Деткова Т.В. доцент"> Деткова Т.В. доцент </option>
+<option value="Дилигенский Е.В. доцент"> Дилигенский Е.В. доцент </option>
+<option value="Динерштейн О.А. ст преп"> Динерштейн О.А. ст преп </option>
+<option value="Дмитриев В.С. доцент"> Дмитриев В.С. доцент </option>
+<option value="Добрынин А.П. проф"> Добрынин А.П. проф </option>
+<option value="Домот О.Н. ст преп"> Домот О.Н. ст преп </option>
+<option value="Дорофеева М.Н. ст преп"> Дорофеева М.Н. ст преп </option>
+<option value="Дорофеюк Н.В. доцент"> Дорофеюк Н.В. доцент </option>
+<option value="Дресвянникова Г.С. доцент"> Дресвянникова Г.С. доцент </option>
+<option value="Дроздова Е.Г. ст преп"> Дроздова Е.Г. ст преп </option>
+<option value="Дружинин А.В. доцент"> Дружинин А.В. доцент </option>
+<option value="Дубровская А.А. ст преп"> Дубровская А.А. ст преп </option>
+<option value="Дудинова И.Ю. ст преп"> Дудинова И.Ю. ст преп </option>
+<option value="Дунаева И.В. доцент"> Дунаева И.В. доцент </option>
+<option value="Дунаевская Т.А. доцент"> Дунаевская Т.А. доцент </option>
+<option value="Дьячкина И.П. ст преп"> Дьячкина И.П. ст преп </option>
+<option value="Егоренков Г.А. ст преп"> Егоренков Г.А. ст преп </option>
+<option value="Егоренкова С.В. доцент"> Егоренкова С.В. доцент </option>
+<option value="Егоров А.Н. зав каф"> Егоров А.Н. зав каф </option>
+<option value="Ермилов В.В. зав каф"> Ермилов В.В. зав каф </option>
+<option value="Ерохова Н.А. доцент"> Ерохова Н.А. доцент </option>
+<option value="Ершов Е.В. зав каф"> Ершов Е.В. зав каф </option>
+<option value="Живиця А.Э. доцент"> Живиця А.Э. доцент </option>
+<option value="Заболтина В.В. доцент"> Заболтина В.В. доцент </option>
+<option value="Заводчикова Г.И. ст преп"> Заводчикова Г.И. ст преп </option>
+<option value="Заводчикова С.Н. ст преп"> Заводчикова С.Н. ст преп </option>
+<option value="Завьялова Д.В. ст преп"> Завьялова Д.В. ст преп </option>
+<option value="Завьялова Т.А. доцент"> Завьялова Т.А. доцент </option>
+<option value="Зайцев А.А. доцент"> Зайцев А.А. доцент </option>
+<option value="Зайцева Т.А. доцент"> Зайцева Т.А. доцент </option>
+<option value="Залипаева О.А. доцент"> Залипаева О.А. доцент </option>
+<option value="Залюбовская Е.Г. доцент"> Залюбовская Е.Г. доцент </option>
+<option value="Заргарян А.М. доцент"> Заргарян А.М. доцент </option>
+<option value="Захарова Т.В. доцент"> Захарова Т.В. доцент </option>
+<option value="Зверева К.С. ст преп"> Зверева К.С. ст преп </option>
+<option value="Зеленцова  М.В. нач управл"> Зеленцова  М.В. нач управл </option>
+<option value="Зуев А.Н. зав каф"> Зуев А.Н. зав каф </option>
+<option value="Иванов Иг.Е. ст преп"> Иванов Иг.Е. ст преп </option>
+<option value="Иванов К.В. ст преп"> Иванов К.В. ст преп </option>
+<option value="Иванов С.В. ст преп"> Иванов С.В. ст преп </option>
+<option value="Иванова А.С. ст преп"> Иванова А.С. ст преп </option>
+<option value="Иванова Е.М. доцент"> Иванова Е.М. доцент </option>
+<option value="Иванова Е.С. доцент"> Иванова Е.С. доцент </option>
+<option value="Иванова М.В. ст преп"> Иванова М.В. ст преп </option>
+<option value="Иванова Н.В. дир инст"> Иванова Н.В. дир инст </option>
+<option value="Ивашечкин Е.К. доцент"> Ивашечкин Е.К. доцент </option>
+<option value="Игнатьева Т.Е. доцент"> Игнатьева Т.Е. доцент </option>
+<option value="Ильинская И.В. доцент"> Ильинская И.В. доцент </option>
+<option value="Ильичева В.А. доцент"> Ильичева В.А. доцент </option>
+<option value="Ильясов А.А. доцент"> Ильясов А.А. доцент </option>
+<option value="Ионова Н.В. доцент"> Ионова Н.В. доцент </option>
+<option value="Исаева М.Г. доцент"> Исаева М.Г. доцент </option>
+<option value="Кабаков З.К. проф"> Кабаков З.К. проф </option>
+<option value="Кабаков П.З. доцент"> Кабаков П.З. доцент </option>
+<option value="Кабакова И.Ю. доцент"> Кабакова И.Ю. доцент </option>
+<option value="Казаков В.В. доцент"> Казаков В.В. доцент </option>
+<option value="Калугина Н.Ф. доцент"> Калугина Н.Ф. доцент </option>
+<option value="Калько О.А. доцент"> Калько О.А. доцент </option>
+<option value="Каптюшина А.Г. доцент"> Каптюшина А.Г. доцент </option>
+<option value="Капустина Е.Ю. доцент"> Капустина Е.Ю. доцент </option>
+<option value="Каракина Т.Г. ст преп"> Каракина Т.Г. ст преп </option>
+<option value="Карузина Н.А. ассис"> Карузина Н.А. ассис </option>
+<option value="Касаткина Е.И. доцент"> Касаткина Е.И. доцент </option>
+<option value="Касаткина С.С. доцент"> Касаткина С.С. доцент </option>
+<option value="Касторнов А.Ф. проф"> Касторнов А.Ф. проф </option>
+<option value="Касторнова В.А. проф"> Касторнова В.А. проф </option>
+<option value="Кашинцева О.А. доцент"> Кашинцева О.А. доцент </option>
+<option value="Каширская  Е.В. доцент"> Каширская  Е.В. доцент </option>
+<option value="Киреев А.Ю. ст преп"> Киреев А.Ю. ст преп </option>
+<option value="Киреев В.Н. ст преп"> Киреев В.Н. ст преп </option>
+<option value="Кирьянова Л.К. ст преп"> Кирьянова Л.К. ст преп </option>
+<option value="Киселев В.А. доцент"> Киселев В.А. доцент </option>
+<option value="Киселева Г.А. ст преп"> Киселева Г.А. ст преп </option>
+<option value="Киселева Л.И. доцент"> Киселева Л.И. доцент </option>
+<option value="Кислюк О.А. ст преп"> Кислюк О.А. ст преп </option>
+<option value="Клинов А.В. доцент"> Клинов А.В. доцент </option>
+<option value="Кобякова О.А. ст преп"> Кобякова О.А. ст преп </option>
+<option value="Ковалева Г.А. доцент"> Ковалева Г.А. доцент </option>
+<option value="Ковряков Д.В. доцент"> Ковряков Д.В. доцент </option>
+<option value="Ковшикова Г.А. доцент"> Ковшикова Г.А. доцент </option>
+<option value="Кожевников А.В. доцент"> Кожевников А.В. доцент </option>
+<option value="Кожевников В.В. ст преп"> Кожевников В.В. ст преп </option>
+<option value="Кожевникова И.А. зав каф"> Кожевникова И.А. зав каф </option>
+<option value="Кожурова Н.А. ст преп"> Кожурова Н.А. ст преп </option>
+<option value="Козлов Г.С. доцент"> Козлов Г.С. доцент </option>
+<option value="Козлова О.В. доцент"> Козлова О.В. доцент </option>
+<option value="Колесов М.П. ст преп"> Колесов М.П. ст преп </option>
+<option value="Колокольников О.Г. доцент"> Колокольников О.Г. доцент </option>
+<option value="Колокольчикова Р.С. проф"> Колокольчикова Р.С. проф </option>
+<option value="Колышкин С.Ю. ст преп"> Колышкин С.Ю. ст преп </option>
+<option value="Коновалова Е.В. ст преп"> Коновалова Е.В. ст преп </option>
+<option value="Корнеева С.М. ст преп"> Корнеева С.М. ст преп </option>
+<option value="Корнилова А.Г. ст преп"> Корнилова А.Г. ст преп </option>
+<option value="Коровушкин В.П. проф"> Коровушкин В.П. проф </option>
+<option value="Королева Е.В. доцент"> Королева Е.В. доцент </option>
+<option value="Корольков В.В. ст преп"> Корольков В.В. ст преп </option>
+<option value="Корчуганова И.Б. ст преп"> Корчуганова И.Б. ст преп </option>
+<option value="Косаренкова М.М. доцент"> Косаренкова М.М. доцент </option>
+<option value="Косачев Д.В. ст преп"> Косачев Д.В. ст преп </option>
+<option value="Косачева Е.П. нач отдела"> Косачева Е.П. нач отдела </option>
+<option value="Косорукова Н.В. доцент"> Косорукова Н.В. доцент </option>
+<option value="Костин И.В. доцент"> Костин И.В. доцент </option>
+<option value="Костина Ю.О. ст преп"> Костина Ю.О. ст преп </option>
+<option value="Кочнев А.О. доцент"> Кочнев А.О. доцент </option>
+<option value="Кочнев Н.В. доцент"> Кочнев Н.В. доцент </option>
+<option value="Красикова Е.А. ст преп"> Красикова Е.А. ст преп </option>
+<option value="Красушкина А.В. доцент"> Красушкина А.В. доцент </option>
+<option value="Краузе Е.С. ст преп"> Краузе Е.С. ст преп </option>
+<option value="Круглова Е.В. ст преп"> Круглова Е.В. ст преп </option>
+<option value="Крылова Н.П. доцент"> Крылова Н.П. доцент </option>
+<option value="Крылова Т.В. доцент"> Крылова Т.В. доцент </option>
+<option value="Крючкова Н.В. доцент"> Крючкова Н.В. доцент </option>
+<option value="Кувылев А.Е. ст преп"> Кувылев А.Е. ст преп </option>
+<option value="Кудака М.А. зав каф"> Кудака М.А. зав каф </option>
+<option value="Кудрявцева А.К. доцент"> Кудрявцева А.К. доцент </option>
+<option value="Кудрявцева Л.Ю. доцент"> Кудрявцева Л.Ю. доцент </option>
+<option value="Кудряшов А.В. доцент"> Кудряшов А.В. доцент </option>
+<option value="Кудряшов Е.И. ст преп"> Кудряшов Е.И. ст преп </option>
+<option value="Кудряшова Ю.В. ст преп"> Кудряшова Ю.В. ст преп </option>
+<option value="Кузина И.Н. доцент"> Кузина И.Н. доцент </option>
+<option value="Кузнецов С.А. доцент"> Кузнецов С.А. доцент </option>
+<option value="Кузнецова А.Л. ст преп"> Кузнецова А.Л. ст преп </option>
+<option value="Кузнецова У.С. доцент"> Кузнецова У.С. доцент </option>
+<option value="Кузнецова Ю.С. ст преп"> Кузнецова Ю.С. ст преп </option>
+<option value="Кузьмин А.А доцент"> Кузьмин А.А доцент </option>
+<option value="Кузьминов А.Л. проф"> Кузьминов А.Л. проф </option>
+<option value="Курашев А.С. доцент"> Курашев А.С. доцент </option>
+<option value="Кутузов М.Н. ст преп"> Кутузов М.Н. ст преп </option>
+<option value="Кушков В.А. ст преп"> Кушков В.А. ст преп </option>
+<option value="Кылосов А.А. зав каф"> Кылосов А.А. зав каф </option>
+<option value="Лавров В.В. ассис"> Лавров В.В. ассис </option>
+<option value="Лаврова С.Ю проф"> Лаврова С.Ю проф </option>
+<option value="Ларионова А.Н. ст преп"> Ларионова А.Н. ст преп </option>
+<option value="Лашкова Г.Н. ст преп"> Лашкова Г.Н. ст преп </option>
+<option value="Лебедев А.В. ст преп"> Лебедев А.В. ст преп </option>
+<option value="Лебедев А.Д. ассис"> Лебедев А.Д. ассис </option>
+<option value="Левашов Е.Н. ст преп"> Левашов Е.Н. ст преп </option>
+<option value="Леонов П.Г. доцент"> Леонов П.Г. доцент </option>
+<option value="Леонова Г.Н. доцент"> Леонова Г.Н. доцент </option>
+<option value="Леонтьева А.А. ст преп"> Леонтьева А.А. ст преп </option>
+<option value="Леханова О.Л. доцент"> Леханова О.Л. доцент </option>
+<option value="Лимаренко О.Ю. ст преп"> Лимаренко О.Ю. ст преп </option>
+<option value="Листвин А.А. доцент"> Листвин А.А. доцент </option>
+<option value="Ломакина Г.В. ст преп"> Ломакина Г.В. ст преп </option>
+<option value="Ломакина Т.А. ст преп"> Ломакина Т.А. ст преп </option>
+<option value="Лосева Н.А. доцент"> Лосева Н.А. доцент </option>
+<option value="Лукин С.В. проф"> Лукин С.В. проф </option>
+<option value="Лукичева З.В. доцент"> Лукичева З.В. доцент </option>
+<option value="Лысенко М.В. ст преп"> Лысенко М.В. ст преп </option>
+<option value="Лысова Н.В. доцент"> Лысова Н.В. доцент </option>
+<option value="Лягинова О.Ю. зав каф"> Лягинова О.Ю. зав каф </option>
+<option value="Магрупова З.М. проф"> Магрупова З.М. проф </option>
+<option value="Майтама Е.В. ст преп"> Майтама Е.В. ст преп </option>
+<option value="Макарова Н.В. доцент"> Макарова Н.В. доцент </option>
+<option value="Макарова Н.Л. ст преп"> Макарова Н.Л. ст преп </option>
+<option value="Макарова С.П. доцент"> Макарова С.П. доцент </option>
+<option value="Макарова Т.Г. ст преп(р)"> Макарова Т.Г. ст преп(р) </option>
+<option value="Максимихина Е.В. доцент"> Максимихина Е.В. доцент </option>
+<option value="Максимов А.В. зав каф"> Максимов А.В. зав каф </option>
+<option value="Максимова М.Ю. ст преп"> Максимова М.Ю. ст преп </option>
+<option value="Максимова О.Г. доцент"> Максимова О.Г. доцент </option>
+<option value="Маликов П.Н. доцент"> Маликов П.Н. доцент </option>
+<option value="Малухина В.Н. ст преп"> Малухина В.Н. ст преп </option>
+<option value="Малышева Е.Ю. доцент"> Малышева Е.Ю. доцент </option>
+<option value="Маралов В.Г. проф"> Маралов В.Г. проф </option>
+<option value="Маралова Т.П. доцент"> Маралова Т.П. доцент </option>
+<option value="Марков Е.А. проф"> Марков Е.А. проф </option>
+<option value="Маркова А.В. ст преп"> Маркова А.В. ст преп </option>
+<option value="Мартынюк Е.Г. ст преп"> Мартынюк Е.Г. ст преп </option>
+<option value="Маслов Е.А. ст преп"> Маслов Е.А. ст преп </option>
+<option value="Масляков А.В. ст преп"> Масляков А.В. ст преп </option>
+<option value="Масляков С.А. ст преп"> Масляков С.А. ст преп </option>
+<option value="МасляковА.А. ст преп"> МасляковА.А. ст преп </option>
+<option value="Матросова О.В. доцент"> Матросова О.В. доцент </option>
+<option value="Маханцева В.А. ассис"> Маханцева В.А. ассис </option>
+<option value="Махов Г.А. дир инст"> Махов Г.А. дир инст </option>
+<option value="Медведева Н.В ст преп"> Медведева Н.В ст преп </option>
+<option value="Медведева О.И. доцент"> Медведева О.И. доцент </option>
+<option value="Межецкая Г.Н. зав каф"> Межецкая Г.Н. зав каф </option>
+<option value="Мельникова Н.Г. доцент"> Мельникова Н.Г. доцент </option>
+<option value="Меньшикова А.А. ст преп"> Меньшикова А.А. ст преп </option>
+<option value="Меркулова Е.А. ст преп"> Меркулова Е.А. ст преп </option>
+<option value="Мехова А.А. зав каф"> Мехова А.А. зав каф </option>
+<option value="Минец Д.В. доцент"> Минец Д.В. доцент </option>
+<option value="Мироненко С.Н. ст преп"> Мироненко С.Н. ст преп </option>
+<option value="Миронова Э.Г. доцент"> Миронова Э.Г. доцент </option>
+<option value="Михаленко Т.Н. доцент"> Михаленко Т.Н. доцент </option>
+<option value="Мишинцева И.Ю. доцент"> Мишинцева И.Ю. доцент </option>
+<option value="Модин Н.В. доцент"> Модин Н.В. доцент </option>
+<option value="Можаева М.Г. ст преп"> Можаева М.Г. ст преп </option>
+<option value="Можаров В.В. ассис"> Можаров В.В. ассис </option>
+<option value="Моисеенко А.В. доцент"> Моисеенко А.В. доцент </option>
+<option value="Морошкин И.В. ст преп"> Морошкин И.В. ст преп </option>
+<option value="Мурашкина С.В. ст преп"> Мурашкина С.В. ст преп </option>
+<option value="Мустафаева Э.Р. доцент"> Мустафаева Э.Р. доцент </option>
+<option value="Мухин В.В. проф"> Мухин В.В. проф </option>
+<option value="Мухина И.Н. ст преп"> Мухина И.Н. ст преп </option>
+<option value="Назмеева Т.В. ст преп"> Назмеева Т.В. ст преп </option>
+<option value="Некипелова И.В. доцент"> Некипелова И.В. доцент </option>
+<option value="Непорожняя И.А ст преп"> Непорожняя И.А ст преп </option>
+<option value="Неробова В.А. доцент"> Неробова В.А. доцент </option>
+<option value="Николаев А.Е. доцент"> Николаев А.Е. доцент </option>
+<option value="Николаев В.В. доцент"> Николаев В.В. доцент </option>
+<option value="Николаев Н.С. доцент"> Николаев Н.С. доцент </option>
+<option value="Никонова Е.Л. доцент"> Никонова Е.Л. доцент </option>
+<option value="Новиков А.Е. доцент"> Новиков А.Е. доцент </option>
+<option value="Новиков Е.А. ассис"> Новиков Е.А. ассис </option>
+<option value="Нохрин А.Н. доцент"> Нохрин А.Н. доцент </option>
+<option value="Одноочко М.К. доцент"> Одноочко М.К. доцент </option>
+<option value="Озарецкая Е.Н. доцент"> Озарецкая Е.Н. доцент </option>
+<option value="Окунева В.А. доцент"> Окунева В.А. доцент </option>
+<option value="Окунева Т.А. доцент"> Окунева Т.А. доцент </option>
+<option value="Ольнова И.В. доцент"> Ольнова И.В. доцент </option>
+<option value="Орлова О.А. доцент"> Орлова О.А. доцент </option>
+<option value="Осипов Е.Б. проф"> Осипов Е.Б. проф </option>
+<option value="Осипова Н.А. доцент"> Осипова Н.А. доцент </option>
+<option value="Остренко И.А. доцент"> Остренко И.А. доцент </option>
+<option value="Павлов Г.А. ст преп"> Павлов Г.А. ст преп </option>
+<option value="Павлова Л.В. доцент"> Павлова Л.В. доцент </option>
+<option value="Павлова М.Г. ст преп"> Павлова М.Г. ст преп </option>
+<option value="Павлова Н.П. доцент"> Павлова Н.П. доцент </option>
+<option value="Пакляшова Н.А. доцент"> Пакляшова Н.А. доцент </option>
+<option value="Парамонова В.А. ст преп"> Парамонова В.А. ст преп </option>
+<option value="Парамонова Е.А. ассис"> Парамонова Е.А. ассис </option>
+<option value="Парыгина С.А. доцент"> Парыгина С.А. доцент </option>
+<option value="Пахолкова Л.М. доцент"> Пахолкова Л.М. доцент </option>
+<option value="Пахолкова Т.В. доцент"> Пахолкова Т.В. доцент </option>
+<option value="Пепик Л.А. доцент"> Пепик Л.А. доцент </option>
+<option value="Перченко Е.Л. доцент"> Перченко Е.Л. доцент </option>
+<option value="Першина Т.В. доцент"> Першина Т.В. доцент </option>
+<option value="Петелин Б.В. проф"> Петелин Б.В. проф </option>
+<option value="Петрова В.В. доцент"> Петрова В.В. доцент </option>
+<option value="Петрова Г.М. доцент"> Петрова Г.М. доцент </option>
+<option value="Петрова Е.Ю. ст преп"> Петрова Е.Ю. ст преп </option>
+<option value="Петрова Н.Б. доцент"> Петрова Н.Б. доцент </option>
+<option value="Петрова Т.О. ст преп"> Петрова Т.О. ст преп </option>
+<option value="Петухова Л.Г. доцент"> Петухова Л.Г. доцент </option>
+<option value="Печникова М.А. доцент"> Печникова М.А. доцент </option>
+<option value="Питерцев М.Э. доцент"> Питерцев М.Э. доцент </option>
+<option value="Плашенков В.В. проф"> Плашенков В.В. проф </option>
+<option value="Плотникова Н.В. доцент"> Плотникова Н.В. доцент </option>
+<option value="Плюснина В.Н. доцент"> Плюснина В.Н. доцент </option>
+<option value="Поддубная Н.Я. доцент"> Поддубная Н.Я. доцент </option>
+<option value="Подоляка А.Е. доцент"> Подоляка А.Е. доцент </option>
+<option value="Подоляка О.Б. доцент"> Подоляка О.Б. доцент </option>
+<option value="Пойгина С.А. ст преп"> Пойгина С.А. ст преп </option>
+<option value="Поклад Н.И. ст преп"> Поклад Н.И. ст преп </option>
+<option value="Полеводова Л.А. доцент"> Полеводова Л.А. доцент </option>
+<option value="Полоник А.И. ассис"> Полоник А.И. ассис </option>
+<option value="Поникарова В.Н. доцент"> Поникарова В.Н. доцент </option>
+<option value="Попова Л.Ю. ст преп"> Попова Л.Ю. ст преп </option>
+<option value="Попова С.И. доцент"> Попова С.И. доцент </option>
+<option value="Портнова Н.С. ст преп"> Портнова Н.С. ст преп </option>
+<option value="Птицын И.А. доцент"> Птицын И.А. доцент </option>
+<option value="Пукело Е.В. -"> Пукело Е.В. - </option>
+<option value="Пышницкий К.М. ст преп"> Пышницкий К.М. ст преп </option>
+<option value="Ракитин П.А. доцент"> Ракитин П.А. доцент </option>
+<option value="Резепин А.С. доцент"> Резепин А.С. доцент </option>
+<option value="Рогожникова С.М. доцент"> Рогожникова С.М. доцент </option>
+<option value="Родичева А.А. доцент"> Родичева А.А. доцент </option>
+<option value="Розова И.Н. доцент"> Розова И.Н. доцент </option>
+<option value="Румянцев А.С. ст преп"> Румянцев А.С. ст преп </option>
+<option value="Румянцев В.В. доцент"> Румянцев В.В. доцент </option>
+<option value="Румянцева А.В. доцент"> Румянцева А.В. доцент </option>
+<option value="Русина Л.Г. доцент"> Русина Л.Г. доцент </option>
+<option value="Рыбаков А.А. проф"> Рыбаков А.А. проф </option>
+<option value="Рюма Н.А. доцент"> Рюма Н.А. доцент </option>
+<option value="Савельева Е.А. ст преп"> Савельева Е.А. ст преп </option>
+<option value="Сазонова Е.В. ст преп"> Сазонова Е.В. ст преп </option>
+<option value="Салтыкова Л.И. доцент"> Салтыкова Л.И. доцент </option>
+<option value="Сальников Н.В. ст преп"> Сальников Н.В. ст преп </option>
+<option value="Сальникова О.С. ст преп"> Сальникова О.С. ст преп </option>
+<option value="Самофал Р.А доцент"> Самофал Р.А доцент </option>
+<option value="Сарычева И.А. доцент"> Сарычева И.А. доцент </option>
+<option value="Сборцева Т.В. доцент"> Сборцева Т.В. доцент </option>
+<option value="Седов А.В. доцент"> Седов А.В. доцент </option>
+<option value="Седова М.В. ст преп"> Седова М.В. ст преп </option>
+<option value="Селедкина Е.В. доцент"> Селедкина Е.В. доцент </option>
+<option value="Селивановских В.В. доцент"> Селивановских В.В. доцент </option>
+<option value="Селина А.В. ст преп"> Селина А.В. ст преп </option>
+<option value="Селяничев О.Л. доцент" SELECTED> Селяничев О.Л. доцент </option><option value="Сенатова И.А. ст преп"> Сенатова И.А. ст преп </option>
+<option value="Сивоконь И.А. ст преп"> Сивоконь И.А. ст преп </option>
+<option value="Сидоренко В.В. ст преп"> Сидоренко В.В. ст преп </option>
+<option value="Сидорова И.В. ст преп"> Сидорова И.В. ст преп </option>
+<option value="Синицын Н.Н. проф"> Синицын Н.Н. проф </option>
+<option value="Скрипунцова Е.М. ст преп"> Скрипунцова Е.М. ст преп </option>
+<option value="Смелкова П.Е. ассис"> Смелкова П.Е. ассис </option>
+<option value="Смирнов Ан.А. ст преп"> Смирнов Ан.А. ст преп </option>
+<option value="Смирнов Ар.А. ст преп"> Смирнов Ар.А. ст преп </option>
+<option value="Смирнова Е.А. доцент"> Смирнова Е.А. доцент </option>
+<option value="Смирнова Е.Ал. доцент"> Смирнова Е.Ал. доцент </option>
+<option value="Смирнова Е.М. доцент"> Смирнова Е.М. доцент </option>
+<option value="Смирнова О.В. доцент"> Смирнова О.В. доцент </option>
+<option value="Смирнова О.В. проф"> Смирнова О.В. проф </option>
+<option value="Смулаковская Р.Л. проф"> Смулаковская Р.Л. проф </option>
+<option value="Смыслова А.Л. доцент"> Смыслова А.Л. доцент </option>
+<option value="Соловьева Е.Е доцент"> Соловьева Е.Е доцент </option>
+<option value="Соловьева О.В. ст преп"> Соловьева О.В. ст преп </option>
+<option value="Соловьева О.И. доцент"> Соловьева О.И. доцент </option>
+<option value="Соловьева С.А. доцент"> Соловьева С.А. доцент </option>
+<option value="Солодянкина О.Ю. проф"> Солодянкина О.Ю. проф </option>
+<option value="Сорокин Г.А. ст преп"> Сорокин Г.А. ст преп </option>
+<option value="Сорокина А.В. доцент"> Сорокина А.В. доцент </option>
+<option value="Сорокина Н.О. доцент"> Сорокина Н.О. доцент </option>
+<option value="Сосипатров Е.А. ст преп"> Сосипатров Е.А. ст преп </option>
+<option value="Спирина Д.В. ст преп"> Спирина Д.В. ст преп </option>
+<option value="Сполохова Е.А. доцент"> Сполохова Е.А. доцент </option>
+<option value="Стародубцев Д.Е. ст преп"> Стародубцев Д.Е. ст преп </option>
+<option value="Стаценко И.М. доцент"> Стаценко И.М. доцент </option>
+<option value="Степанец И.Ю. ст преп"> Степанец И.Ю. ст преп </option>
+<option value="Степанов А.Т. доцент"> Степанов А.Т. доцент </option>
+<option value="Степанова О.В. доцент"> Степанова О.В. доцент </option>
+<option value="Ступнева Д.А. ассис"> Ступнева Д.А. ассис </option>
+<option value="Суворин Н.Н. доцент"> Суворин Н.Н. доцент </option>
+<option value="Суворова Н.Л. доцент"> Суворова Н.Л. доцент </option>
+<option value="Сухарева Н.П. доцент"> Сухарева Н.П. доцент </option>
+<option value="Сысоева О.Н. ст преп"> Сысоева О.Н. ст преп </option>
+<option value="Табунов И.А. ст преп"> Табунов И.А. ст преп </option>
+<option value="Теплякова Н.В. ст преп"> Теплякова Н.В. ст преп </option>
+<option value="Терно Т.А. ст преп"> Терно Т.А. ст преп </option>
+<option value="Тимофеева Е.Г. доцент"> Тимофеева Е.Г. доцент </option>
+<option value="Тимофеева М.А. доцент"> Тимофеева М.А. доцент </option>
+<option value="Тимошина Е.И. доцент"> Тимошина Е.И. доцент </option>
+<option value="Тихомирова Н.П. доцент"> Тихомирова Н.П. доцент </option>
+<option value="Тихонова Л.П. доцент"> Тихонова Л.П. доцент </option>
+<option value="Тишин Ю.Н. доцент"> Тишин Ю.Н. доцент </option>
+<option value="Тишина Е.В. доцент"> Тишина Е.В. доцент </option>
+<option value="Толовиков М.И. доцент"> Толовиков М.И. доцент </option>
+<option value="Толстиков А.В. доцент"> Толстиков А.В. доцент </option>
+<option value="Торохова Г.З. ст преп"> Торохова Г.З. ст преп </option>
+<option value="Тотьмянин Н.Д. доцент"> Тотьмянин Н.Д. доцент </option>
+<option value="Трубицына М.Ю. доцент"> Трубицына М.Ю. доцент </option>
+<option value="Туваев С.Г доцент"> Туваев С.Г доцент </option>
+<option value="Туманов Д.В. доцент"> Туманов Д.В. доцент </option>
+<option value="Тюкин С.В. ст преп"> Тюкин С.В. ст преп </option>
+<option value="Тюлю Г.М. проф"> Тюлю Г.М. проф </option>
+<option value="Угловская О.В. ст преп"> Угловская О.В. ст преп </option>
+<option value="Уйманова Г.В. ст преп"> Уйманова Г.В. ст преп </option>
+<option value="Усова А.В. доцент"> Усова А.В. доцент </option>
+<option value="Февралева Т.В. ст преп"> Февралева Т.В. ст преп </option>
+<option value="Федоренко И.Н. доцент"> Федоренко И.Н. доцент </option>
+<option value="Федорчук Н.М. проф"> Федорчук Н.М. проф </option>
+<option value="Филиппова В.И. проф"> Филиппова В.И. проф </option>
+<option value="Фоменко А.И. проф"> Фоменко А.И. проф </option>
+<option value="Фоменко М.В. ст преп"> Фоменко М.В. ст преп </option>
+<option value="Фролов А.А. доцент"> Фролов А.А. доцент </option>
+<option value="Фролова И.В. ст преп"> Фролова И.В. ст преп </option>
+<option value="Х проф"> Х проф </option>
+<option value="Хавроничев В.И. доцент"> Хавроничев В.И. доцент </option>
+<option value="Харахнин К.А. доцент"> Харахнин К.А. доцент </option>
+<option value="Хорошавин О.Н. ст преп(р)"> Хорошавин О.Н. ст преп(р) </option>
+<option value="Хорошавина Л.Г. ст преп"> Хорошавина Л.Г. ст преп </option>
+<option value="Хромов В.В. доцент"> Хромов В.В. доцент </option>
+<option value="Целикова Е.В. нач управл"> Целикова Е.В. нач управл </option>
+<option value="Цыбанова О.Л. ст преп"> Цыбанова О.Л. ст преп </option>
+<option value="Чарикова Л.Л. доцент"> Чарикова Л.Л. доцент </option>
+<option value="Чернов А.В. дир инст"> Чернов А.В. дир инст </option>
+<option value="Чернышова А.О. ассис"> Чернышова А.О. ассис </option>
+<option value="Чиглова Е.И. ст преп"> Чиглова Е.И. ст преп </option>
+<option value="Чижова В.Н. доцент"> Чижова В.Н. доцент </option>
+<option value="Чиршева Г.Н. зав каф"> Чиршева Г.Н. зав каф </option>
+<option value="Чистякова В.В. доцент"> Чистякова В.В. доцент </option>
+<option value="Чистякова Н.Н. доцент"> Чистякова Н.Н. доцент </option>
+<option value="Чорная Т.Н. доцент"> Чорная Т.Н. доцент </option>
+<option value="Чуркин Б.В. доцент"> Чуркин Б.В. доцент </option>
+<option value="Шабалов В.А. доцент"> Шабалов В.А. доцент </option>
+<option value="Шалаевский Д.Л. доцент"> Шалаевский Д.Л. доцент </option>
+<option value="Шалашов Е.В. доцент"> Шалашов Е.В. доцент </option>
+<option value="Шарифуллина С.В. доцент"> Шарифуллина С.В. доцент </option>
+<option value="Шарков П.Ю. ассис"> Шарков П.Ю. ассис </option>
+<option value="Шарков Ю.П. нач сп кл"> Шарков Ю.П. нач сп кл </option>
+<option value="Шаров Г.И. проф"> Шаров Г.И. проф </option>
+<option value="Шахов В.В. ст преп"> Шахов В.В. ст преп </option>
+<option value="Швец В.М доцент"> Швец В.М доцент </option>
+<option value="Шестаков Н.И. зав каф"> Шестаков Н.И. зав каф </option>
+<option value="Шестакова Е.А. доцент"> Шестакова Е.А. доцент </option>
+<option value="Шивринская А.А. ассис"> Шивринская А.А. ассис </option>
+<option value="Шивринская С.Е. зав каф"> Шивринская С.Е. зав каф </option>
+<option value="Шилова Е.В. ст преп"> Шилова Е.В. ст преп </option>
+<option value="Шишова А.В. доцент"> Шишова А.В. доцент </option>
+<option value="Шрейдер Н.В. доцент"> Шрейдер Н.В. доцент </option>
+<option value="Шумихина В.В. доцент"> Шумихина В.В. доцент </option>
+<option value="Шутикова М.И. проф"> Шутикова М.И. проф </option>
+<option value="Щегряев Н.А. доцент"> Щегряев Н.А. доцент </option>
+<option value="Юдина О.В. доцент"> Юдина О.В. доцент </option>
+<option value="Яковлева Е.В. зав каф"> Яковлева Е.В. зав каф </option>
+<option value="Яковлева Е.Н. доцент"> Яковлева Е.Н. доцент </option>
+<option value="Яковлева Н.И. ст преп"> Яковлева Н.И. ст преп </option>
+<option value="Якушкина Т.В. проф"> Якушкина Т.В. проф </option>
+<option value="Яньков В.Г. доцент"> Яньков В.Г. доцент </option>
+<option value="Яшалова Н.Н. проф"> Яшалова Н.Н. проф </option>
+<option value="Яшина О.В. ст преп"> Яшина О.В. ст преп </option>
+<option value="Ященко М.А. доцент"> Ященко М.А. доцент </option>
+</select>
+
+<form name="selecter2" action="_prepod.php" method="post"><select name="sss" size=1>
+<option value=1>1 семестр 2016-17</option><option value=2 SELECTED >2 семестр 2016-17</option></select>&nbsp;<input name="mode" type="submit" value="Расписание занятий">&nbsp;<input name="mode" type="submit" value="Расписание экзаменов">&nbsp;</form>
+</body></html>
+<!-- <div align=center><h1><b>Расписание занятий пр. Селяничев О.Л. доцент, семестр 2</b></h1> </p> -->
+<!-- <div align=center><h3><b><font color=red>Проект расписания<br> (окончательный вариант появится после 01.02.2005)</font><br><h1>Расписание занятий пр. Селяничев О.Л. доцент, семестр 2</b></h1> </p> -->
+
+<div align=center><h3><font color=orangered>Проект расписания. Возможны изменения.</font></h3><h1>Расписание занятий пр. Селяничев О.Л. доцент<br />2016-17 уч.год, семестр 2</b></h1>
+
+<table border='1' cellspacing='1' cellpadding='0'>
+<tr align="center">
+<td bgcolor=#8888FF>День</td><td />
+<td bgcolor=#8888FF>Время</td><td />
+<td bgcolor=#8888FF>Дисциплина</td><td />
+<td bgcolor=#8888FF>Неделя</td><td />
+<td bgcolor=#8888FF>ч/н</td><td />
+<td bgcolor=#8888FF>Группа</td><td />
+<td bgcolor=#8888FF>Ауд/Адрес</td><td />
+ </tr>
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 33 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 33 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;16-50 - 18-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;16-50 - 18-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Технология разработки систем управления базами данных и знаний&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 38 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;09.06.01-03-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;16-50 - 18-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;зач Технология разработки систем управления базами данных и знаний&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 39 по 39&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;09.06.01-03-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-00 - 19-30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Телекоммуникационные технологии и системы связи&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 26 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТм-01-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-00 - 19-30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Телекоммуникационные технологии и системы связи&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТм-01-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;19-40 - 21-10&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Телекоммуникационные технологии и системы связи&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 26 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТм-01-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;19-40 - 21-10&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Телекоммуникационные технологии и системы связи&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТм-01-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 26 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 26 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Администрирование информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-41оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Администрирование информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-41оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Администрирование информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-41оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Администрирование информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-41оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-00 - 19-30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Информационные системы на основе СУБД&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 23 по 24&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПМм-02-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-00 - 19-30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Информационные системы на основе СУБД&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПМм-02-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-00 - 19-30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Проектирование информационных систем на основе СУБД&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИм-02-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-00 - 19-30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Проектирование информационных систем на основе СУБД&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 36&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИм-02-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;19-40 - 21-10&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Информационные системы на основе СУБД&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 25 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПМм-02-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;19-40 - 21-10&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Информационные системы на основе СУБД&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 23 по 24&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПМм-02-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;19-40 - 21-10&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Проектирование информационных систем на основе СУБД&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 36&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИм-02-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;вторник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;19-40 - 21-10&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Проектирование информационных систем на основе СУБД&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИм-02-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 33 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 37&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 37&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 33 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;217 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-00 - 19-30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;зач Информационные системы на основе СУБД&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 26 по 26&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПМм-02-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-00 - 19-30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Телекоммуникационные технологии и системы связи&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТм-01-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;среда&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;19-40 - 21-10&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Телекоммуникационные технологии и системы связи&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТм-01-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 33 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 33 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 37&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 37&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;16-50 - 18-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 30&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;205 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;чет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИНФпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;229 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 24 по 25&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 27 по 27&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;16-50 - 18-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Технология разработки систем управления базами данных и знаний&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 35&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;09.06.01-03-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;16-50 - 18-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Технология разработки систем управления базами данных и знаний&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 37 по 37&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;09.06.01-03-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 33 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;08-30 - 10-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Технология разработки систем управления базами данных и знаний&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;09.06.01-03-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 33 по 33&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 30 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;221 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных  систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;10-10 - 11-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Технология разработки систем управления базами данных и знаний&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 32 по 32&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;09.06.01-03-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;11-50 - 13-20&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 37&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Базы данных&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-21оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Компьютерные сети и телекоммуникации&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 28 по 28&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;13-30 - 15-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 36 по 37&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;суббота&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;15-10 - 16-40&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Web-программирование&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 29&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИВТпб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-30 - 20-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 29 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ПИб-01-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;понедельник&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-30 - 20-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Технология разработки систем управления базами данных и знаний&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 38 по 38&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;09.06.01-03-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;четверг&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-30 - 20-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;лр Методы и средства проектирования программно-информационных систем&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 31 по 31&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;1ИСб-00-31оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF /><td bgcolor=#FFFFFF />
+<td bgcolor=#FFFFFF />
+</tr><tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-30 - 20-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;л Технология разработки систем управления базами данных и знаний&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 34 по 34&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;ежен&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;09.06.01-03-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+<tr>
+<td bgcolor=#ddddee>&nbsp;пятница&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;18-30 - 20-00&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;пр Технология разработки систем управления базами данных и знаний&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;c 35 по 37&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;нечет&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;09.06.01-03-11оп&nbsp;</td><td />
+<td bgcolor=#ddddee>&nbsp;227 Сов.8&nbsp;</td><td />
+</table>
+<script language="Javascript1.2">
+var message = "Распечатать эту страницу";
+function printpage() {window.print();}
+document.write("<form><input type=button "
++"value=\""+message+"\" onClick=\"printpage()\"></form>");
+</script>
+<FONT COLOR="white" SIZE=4>Последнее обновление 07.03.2017 6:42:10 </Font><P>
+
+
+
+<p class=MsoNormal>
+<span style='font-size:8.0pt;style='color:#FAFAFA'>
+<a href="mailto:Watrik@chsu.ru"><span
+lang=RU style='color:#FAFAFA;mso-ansi-language:RU'>Powered by
+Watrik &copy; 2003</span></a></span><span style='color:#FAFAFA;
+mso-ansi-language:EN-US'> <span lang=RU><o:p></o:p></span></span></p>
+
+<script>
+function openProg() 
+{ 
+ window.location.href = 'admin.php'; 
+}
+</script>
+<a onclick="openProg()"><font size=1 color="white">Админка<font></a>
+</body></html>

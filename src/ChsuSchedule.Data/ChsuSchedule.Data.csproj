@@ -40,6 +40,8 @@
     <Compile Include="Parser\IScheduleParser.cs" />
     <Compile Include="Parser\ScheduleParser.cs" />
     <Compile Include="Parser\StudentExamScheduleRecord.cs" />
+    <Compile Include="Parser\TeacherClassesScheduleRecord.cs" />
+    <Compile Include="Parser\TeacherExamScheduleRecord.cs" />
     <Compile Include="Periodicity.cs" />
     <Compile Include="ScheduleContentSourceFactory.cs" />
     <Compile Include="StudentScheduleRepository.cs" />
@@ -50,6 +52,8 @@
     <Compile Include="ScheduleMode.cs" />
     <Compile Include="Html\WebScheduleContentSource.cs" />
     <Compile Include="Parser\StudentClassesScheduleRecord.cs" />
+    <Compile Include="TeacherSchedule.cs" />
+    <Compile Include="TeacherScheduleRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">

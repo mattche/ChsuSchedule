@@ -2,8 +2,8 @@
 
 namespace ChsuSchedule.Data.Parser
 {
-	/// <summary>Запись расписания занятий студентов.</summary>
-	class StudentClassesScheduleRecord
+	/// <summary>Запись расписания занятий преподавателей.</summary>
+	class TeacherClassesScheduleRecord
 	{
 		public DayOfWeek Weekday { get; set; }
 
@@ -17,7 +17,7 @@ namespace ChsuSchedule.Data.Parser
 
 		public Periodicity Periodicity { get; set; }
 
-		public string Teacher { get; set; }
+		public string Group { get; set; }
 
 		public string Classroom { get; set; }
 	}

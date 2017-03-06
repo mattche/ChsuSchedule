@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,16 +8,16 @@ using ChsuSchedule.Data.Html;
 
 namespace ChsuSchedule.Data
 {
-	public sealed class StudentScheduleRepository : IStudentScheduleRepository
+	public sealed class TeacherScheduleRepository
 	{
 		#region .ctor
 
-		public StudentScheduleRepository()
+		public TeacherScheduleRepository()
 			: this(ScheduleContentSourceFactory.CreateDefaultSource())
 		{
 		}
 
-		public StudentScheduleRepository(IScheduleContentSource contentSource)
+		public TeacherScheduleRepository(IScheduleContentSource contentSource)
 		{
 			_source = contentSource;
 			_parser = new ScheduleParser();
@@ -27,27 +27,27 @@ namespace ChsuSchedule.Data
 
 		#region Methods
 
-		public StudentWeekSchedule FetchSchedule(string group, DateTime date)
+		public TeacherWeekSchedule FetchSchedule(string teacher, DateTime date)
 		{
-			if (!_classesScheduleCache.HasValue || group != _classesScheduleCache.Value.Key)
+			if (!_classesScheduleCache.HasValue || teacher != _classesScheduleCache.Value.Key)
 			{
 				var semester = ChsuCalendarCalculator.CalcSemester(date);
-				var html = _source.GetStudentScheduleContent(group, semester, ScheduleMode.ClassesSchedule);
-				var parsedRecords = _parser.ParseStundentClassesSchedule(html);
-				_classesScheduleCache = new KeyValuePair<string, IEnumerable<StudentClassesScheduleRecord>>(group, parsedRecords);
+				var html = _source.GetTeacherScheduleContent(teacher, semester, ScheduleMode.ClassesSchedule);
+				var parsedRecords = _parser.ParseTeacherClassesSchedule(html);
+				_classesScheduleCache = new KeyValuePair<string, IEnumerable<TeacherClassesScheduleRecord>>(teacher, parsedRecords);
 			}
 
 			return FetchScheduleCore(date);
 		}
 
-		public async Task<StudentWeekSchedule> FetchScheduleAsync(string group, DateTime date)
+		public async Task<TeacherWeekSchedule> FetchScheduleAsync(string teacher, DateTime date)
 		{
-			if (!_classesScheduleCache.HasValue || group != _classesScheduleCache.Value.Key)
+			if (!_classesScheduleCache.HasValue || teacher != _classesScheduleCache.Value.Key)
 			{
 				var semester = ChsuCalendarCalculator.CalcSemester(date);
-				var html = await _source.GetStudentScheduleContentAsync(group, semester, ScheduleMode.ClassesSchedule).ConfigureAwait(false);
-				var parsedRecords = _parser.ParseStundentClassesSchedule(html);
-				_classesScheduleCache = new KeyValuePair<string, IEnumerable<StudentClassesScheduleRecord>>(group, parsedRecords);
+				var html = await _source.GetTeacherScheduleContentAsync(teacher, semester, ScheduleMode.ClassesSchedule).ConfigureAwait(false);
+				var parsedRecords = _parser.ParseTeacherClassesSchedule(html);
+				_classesScheduleCache = new KeyValuePair<string, IEnumerable<TeacherClassesScheduleRecord>>(teacher, parsedRecords);
 			}
 
 			return FetchScheduleCore(date);
@@ -57,7 +57,7 @@ namespace ChsuSchedule.Data
 
 		#region Private methods
 
-		private StudentWeekSchedule FetchScheduleCore(DateTime date)
+		private TeacherWeekSchedule FetchScheduleCore(DateTime date)
 		{
 			var records = _classesScheduleCache.Value.Value;
 			var weekNum = ChsuCalendarCalculator.CalcWeekNumber(date);
@@ -80,24 +80,24 @@ namespace ChsuSchedule.Data
 				{
 					var rows = filtered
 						.Where(rec => rec.Weekday == wd)
-						.Select(rec => new StudentDayScheduleRow()
+						.Select(rec => new TeacherDayScheduleRow()
 						{
 							Duration = rec.Duration,
 							Subject = rec.Subject,
 							Classroom = rec.Classroom,
-							Teacher = rec.Teacher
+							Group = rec.Group
 						});
-					return new StudentDaySchedule(ChsuCalendarCalculator.CalcDate(date, wd), rows);
+					return new TeacherDaySchedule(ChsuCalendarCalculator.CalcDate(date, wd), rows);
 				});
 
-			return new StudentWeekSchedule(weekNum, daySchedules);
+			return new TeacherWeekSchedule(weekNum, daySchedules);
 		}
 
 		#endregion
 
 		#region Data
 
-		private KeyValuePair<string, IEnumerable<StudentClassesScheduleRecord>>? _classesScheduleCache;
+		private KeyValuePair<string, IEnumerable<TeacherClassesScheduleRecord>>? _classesScheduleCache;
 
 		private IScheduleContentSource _source;
 

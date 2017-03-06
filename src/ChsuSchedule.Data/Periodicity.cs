@@ -9,7 +9,7 @@ namespace ChsuSchedule.Data
 	public enum Periodicity
 	{
 		Even,
-		Odd,
+		NotEven,
 		Weekly
 	}
 }

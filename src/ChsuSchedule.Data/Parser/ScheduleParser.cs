@@ -6,8 +6,11 @@ using AngleSharp.Parser.Html;
 
 namespace ChsuSchedule.Data.Parser
 {
+	/// <summary>Парсер расписания.</summary>
 	sealed class ScheduleParser : IScheduleParser
 	{
+		#region IScheduleParser implementation
+
 		public IEnumerable<StudentClassesScheduleRecord> ParseStundentClassesSchedule(string htmlContent)
 		{
 			var parser = new HtmlParser();
@@ -82,6 +85,84 @@ namespace ChsuSchedule.Data.Parser
 			return records;
 		}
 
+		public IEnumerable<TeacherClassesScheduleRecord> ParseTeacherClassesSchedule(string htmlContent)
+		{
+			var parser = new HtmlParser();
+			var document = parser.Parse(htmlContent);
+
+			var rawRecords = document.QuerySelectorAll("tr")
+				.Skip(3)
+				.Where(tr => tr.QuerySelectorAll("td").Count() == 14
+						  && tr.QuerySelectorAll("td").Count(td => td.TextContent != "\n") != 0)
+				.Select(tr => new
+				{
+					Weekday = tr.QuerySelector("td").TextContent.Trim(),
+					Duration = tr.QuerySelectorAll("td")
+						.Skip(1 * 2)
+						.FirstOrDefault()
+						.TextContent.Trim(),
+					Subject = tr.QuerySelectorAll("td")
+						.Skip(2 * 2)
+						.FirstOrDefault()
+						.TextContent.Trim(),
+					Weeks = tr.QuerySelectorAll("td")
+						.Skip(3 * 2)
+						.FirstOrDefault()
+						.TextContent.Trim(),
+					Periodicity = tr.QuerySelectorAll("td")
+						.Skip(4 * 2)
+						.FirstOrDefault()
+						.TextContent.Trim(),
+					Group = tr.QuerySelectorAll("td")
+						.Skip(5 * 2)
+						.FirstOrDefault()
+						.TextContent.Trim(),
+					Classroom = tr.QuerySelectorAll("td")
+						.Skip(6 * 2)
+						.FirstOrDefault()
+						.TextContent.Trim()
+				});
+
+			var records = new List<TeacherClassesScheduleRecord>();
+			foreach (var rec in rawRecords)
+			{
+				int weeksStart, weeksEnd;
+				ParseWeeks(rec.Weeks, out weeksStart, out weeksEnd);
+
+				Periodicity periodicity;
+				try
+				{
+					periodicity = ParsePeriodicity(rec.Periodicity);
+				}
+				catch { return null; }
+
+				DayOfWeek weekday;
+				try
+				{
+					weekday = ParseDayOfWeak(rec.Weekday);
+				}
+				catch { return null; }
+
+				records.Add(new TeacherClassesScheduleRecord
+				{
+					Classroom = rec.Classroom,
+					Duration = rec.Duration,
+					Periodicity = periodicity,
+					Subject = rec.Subject,
+					Group = rec.Group,
+					Weekday = weekday,
+					WeeksStart = weeksStart,
+					WeeksEnd = weeksEnd
+				});
+			}
+
+			return records;
+		}
+
+		#endregion
+
+		#region Methods
+
 		private void ParseWeeks(string value, out int weeksStart, out int weeksEnd)
 		{
 			var substrings = value.Split(' ');
@@ -104,7 +185,7 @@ namespace ChsuSchedule.Data.Parser
 				case "чет":
 					return Periodicity.Even;
 				case "нечет":
-					return Periodicity.Odd;
+					return Periodicity.NotEven;
 				case "ежен":
 					return Periodicity.Weekly;
 				default:
@@ -134,5 +215,7 @@ namespace ChsuSchedule.Data.Parser
 					throw new ArgumentException("Uncorrect day of weak value", nameof(value));
 			}
 		}
+
+		#endregion
 	}
 }

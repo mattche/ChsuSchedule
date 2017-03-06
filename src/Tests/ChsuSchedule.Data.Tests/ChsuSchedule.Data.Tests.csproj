@@ -58,6 +58,7 @@
     <Compile Include="EncodingUtilityTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StudentScheduleRepositoryTest.cs" />
+    <Compile Include="TeacherScheduleRepositoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ChsuSchedule.Data\ChsuSchedule.Data.csproj">
@@ -69,7 +70,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="data\raspisanie.txt" />
+    <Content Include="data\students.txt" />
+    <Content Include="data\teachers.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
