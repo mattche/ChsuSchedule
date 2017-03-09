@@ -4,28 +4,55 @@
 						 x:Class="ChsuSchedule.Views.HomePage"
 						 Title="Расписание ЧГУ">
 	<StackLayout Padding="10, 10, 10, 10">
+		
 		<StackLayout Orientation="Horizontal" >
-			<Label Text="Расписание преподавателей" />
-			<Switch IsToggled="{Binding ShowAllWeek}" HorizontalOptions=""/>	
-			<Label Text="Расписание студентов" />
+			<Label Text="Расписание студентов / преподавателей" />
+			<Switch IsToggled="{Binding IsTeacherSchedule}"/>
 		</StackLayout>
+		
 		<StackLayout Orientation="Horizontal">
-			<Label Text="Группа" />
-			<Entry Placeholder="Группа" Text="{Binding SelectedGroup}" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" FontSize="Medium"/>
+			<Label>
+				<Label.Triggers>
+					<DataTrigger Binding="{Binding IsTeacherSchedule}" 
+											 TargetType="Label"
+											 Value="True">
+						<Setter Property="Text" Value="Преподаватель"/>
+					</DataTrigger>
+					<DataTrigger Binding="{Binding IsTeacherSchedule}"
+											 TargetType="Label"
+											 Value="False">
+						<Setter Property="Text" Value="Группа"/>
+					</DataTrigger>
+				</Label.Triggers>
+			</Label>
+			<Entry HorizontalOptions="EndAndExpand" FontSize="Medium">
+				<Entry.Triggers>
+					<DataTrigger Binding="{Binding IsTeacherSchedule}"
+											 TargetType="Entry"
+											 Value="True">
+						<Setter Property="Text" Value="{Binding SelectedTeacher}"/>
+					</DataTrigger>
+					<DataTrigger Binding="{Binding IsTeacherSchedule}"
+											 TargetType="Entry"
+											 Value="False">
+						<Setter Property="Text" Value="{Binding SelectedGroup}"/>
+					</DataTrigger>
+				</Entry.Triggers>
+			</Entry>
 		</StackLayout>
+		
 		<StackLayout Orientation="Horizontal">
 			<Label Text="Дата" />
 			<DatePicker Date="{Binding SelectedDate}" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
 		</StackLayout>
-		<StackLayout Orientation="Horizontal" >
-			<Label Text="На день"/>
+		
+		<StackLayout Orientation="Horizontal">
+			<Label Text="На день / на неделю"/>
 			<Switch IsToggled="{Binding ShowAllWeek}" />	
-			<Label Text="На неделю"/>
 		</StackLayout>	
 
 		<Button Text="Расписание" 
 						Command="{Binding ShowScheduleCommand}" 
-						CommandParameter="{Binding Configuration}" 
 						IsEnabled="{Binding IsNotBusy}"/>
 
 		<ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>

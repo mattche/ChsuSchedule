@@ -37,7 +37,14 @@ namespace ChsuSchedule.Data.Tests
 
 			var rep = new TeacherScheduleRepository(proxy);
 			var schedule = rep.FetchSchedule(TEACHER, DATE);
+
+			Expect(schedule.DaySchedules, Is.Not.Null);
+			Expect(schedule.DaySchedules.Count, Is.Not.EqualTo(0));
+
 			var daySchedule = schedule.DaySchedules[1];
+
+			Expect(daySchedule.Rows, Is.Not.Null);
+			Expect(daySchedule.Rows.Count, Is.Not.EqualTo(0));
 
 			Expect(daySchedule.Rows[0].Classroom, Is.EqualTo(expectedRow.Classroom));
 			Expect(daySchedule.Rows[0].Duration, Is.EqualTo(expectedRow.Duration));

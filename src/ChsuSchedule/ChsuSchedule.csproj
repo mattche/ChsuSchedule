@@ -36,6 +36,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="DomainScheduleConverter.cs" />
+    <Compile Include="Schedule.cs" />
     <Compile Include="ScheduleConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\DayScheduleViewModel.cs" />

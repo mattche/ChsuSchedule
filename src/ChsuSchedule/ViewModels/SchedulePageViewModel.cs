@@ -1,33 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Collections.ObjectModel;
-
-using ChsuSchedule.Data;
 
 namespace ChsuSchedule.ViewModels
 {
 	public class SchedulePageViewModel : ViewModelBase
 	{
-		public SchedulePageViewModel(StudentWeekSchedule weekSchedule)
+		public SchedulePageViewModel(WeekSchedule weekSchedule)
 		{
 			_weekSchedule = weekSchedule;
-			ScheduleDays = new ObservableCollection<Grouping<DateTime, StudentDayScheduleRow>>();
+			ScheduleDays = new ObservableCollection<Grouping<DateTime, DayScheduleRow>>();
 			FillSchedule();
 		}
 
-		public ObservableCollection<Grouping<DateTime, StudentDayScheduleRow>> ScheduleDays { get; }
+		public ObservableCollection<Grouping<DateTime, DayScheduleRow>> ScheduleDays { get; }
 
-		private StudentWeekSchedule _weekSchedule;
+		private WeekSchedule _weekSchedule;
 
 		private void FillSchedule()
 		{
 			ScheduleDays.Clear();
-			var groups = _weekSchedule.DaySchedules
-				.Select(s => new Grouping<DateTime, StudentDayScheduleRow>(s.Date, s.Rows));
-			foreach (var g in groups)
+			var groupings = _weekSchedule.DaySchedules
+				.Select(s => new Grouping<DateTime, DayScheduleRow>(s.Date, s.Rows));
+			foreach (var g in groupings)
 			{
 				ScheduleDays.Add(g);
 			}

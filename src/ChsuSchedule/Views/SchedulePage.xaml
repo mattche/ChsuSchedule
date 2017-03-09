@@ -5,12 +5,15 @@
 						 Title="Расписание ЧГУ">
 	<StackLayout>
 		
-		<ListView ItemsSource="{Binding ScheduleDays}" IsGroupingEnabled="True" RowHeight="60">
+		<ListView ItemsSource="{Binding ScheduleDays}" IsGroupingEnabled="True" HasUnevenRows="True">
 			<ListView.GroupHeaderTemplate>
 				<DataTemplate>
-					<ViewCell Height="25">
-						<StackLayout Padding="5">
-							<Label Text="{Binding Key, StringFormat='{0:ddd, d MMMM}'}" FontSize="Medium" FontAttributes="Bold"/>
+					<ViewCell>
+						<StackLayout Padding="0,10,0,10" BackgroundColor="#F5F5F5">
+							<Label Text="{Binding Key, StringFormat='{0:ddd, d MMMM}'}" 
+										 FontSize="Large" 
+										 FontAttributes="None" 
+										 HorizontalTextAlignment="Center"/>
 						</StackLayout>
 					</ViewCell>
 				</DataTemplate>
@@ -20,13 +23,26 @@
 				<DataTemplate>
 					<ViewCell>
 						<ViewCell.View>
-							<StackLayout Orientation="Vertical" Spacing="5" >
-								<Label Text="{Binding DurationAndSubject}"/>
-								<StackLayout Orientation="Horizontal">
-									<Label Text="{Binding Teacher}"/>
-									<Label Text="{Binding Classroom}"/>
-								</StackLayout>
-							</StackLayout>
+							<Grid Padding="4,4,4,4">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition Width="*"/>
+								</Grid.ColumnDefinitions>
+								<Grid.RowDefinitions>
+									<RowDefinition Height="Auto"/>
+									<RowDefinition Height="Auto"/>
+									<RowDefinition Height="Auto"/>
+								</Grid.RowDefinitions>
+								
+								<Label Grid.Column="0" Grid.Row="0" 
+											 Text="{Binding Duration}" FontSize="Medium" FontAttributes="Bold"/>
+								<Label Grid.Column="1" Grid.Row="0"
+											 Text="{Binding Classroom}" FontSize="Medium" HorizontalOptions="EndAndExpand"/>
+								<Label Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" 
+											 Text="{Binding Subject}"/>
+								<Label Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" 
+											 Text="{Binding Participant}"/>
+							</Grid>
 						</ViewCell.View>
 					</ViewCell>
 				</DataTemplate>

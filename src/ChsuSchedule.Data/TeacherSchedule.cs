@@ -38,7 +38,5 @@ namespace ChsuSchedule.Data
 		public string Group { get; set; }
 
 		public string Classroom { get; set; }
-
-		public string DurationAndSubject => $"{Duration} {Subject}";
 	}
 }

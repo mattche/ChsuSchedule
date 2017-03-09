@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.ObjectModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using System.Net.Http;
+using System.Linq;
 
 using Xamarin.Forms;
 
@@ -38,6 +34,16 @@ namespace ChsuSchedule.ViewModels
 			}
 		}
 
+		public string SelectedTeacher
+		{
+			get { return Configuration.Teacher; }
+			set
+			{
+				Configuration.Teacher = value;
+				RisePropertyChanged(nameof(SelectedTeacher));
+			}
+		}
+
 		public DateTime SelectedDate
 		{
 			get { return Configuration.Date; }
@@ -55,6 +61,16 @@ namespace ChsuSchedule.ViewModels
 			{
 				Configuration.ShowAllWeek = value;
 				RisePropertyChanged(nameof(ShowAllWeek));
+			}
+		}
+
+		public bool IsTeacherSchedule
+		{
+			get { return Configuration.IsTeacherSchedule; }
+			set
+			{
+				Configuration.IsTeacherSchedule = value;
+				RisePropertyChanged(nameof(IsTeacherSchedule));
 			}
 		}
 
@@ -87,36 +103,49 @@ namespace ChsuSchedule.ViewModels
 
 		#region Methods
 
-		private async Task LoadScheduleAsync(object scheduleConfiguration)
+		private async Task LoadScheduleAsync(object param)
 		{
-			var config = scheduleConfiguration as ScheduleConfiguration;
-			if (config != null)
+			if (Configuration == null) return;
+
+			WeekSchedule schedule = null;
+			IsBusy = true;
+
+			try
 			{
-				var rep = new StudentScheduleRepository();
-				IsBusy = true;
-				StudentWeekSchedule schedule = null;
-
-				try
+				if (Configuration.IsTeacherSchedule)
 				{
-					schedule = await rep.FetchScheduleAsync(config.Group, config.Date);
+					var rep = new TeacherScheduleRepository();
+					var data = await rep.FetchScheduleAsync(Configuration.Teacher, Configuration.Date);
+					schedule = DomainScheduleConverter.ToWeekSchedule(data);
 				}
-				catch (Exception exc)
+				else
 				{
-					RiseAlertOccured("Не удалось загрузить расписание.");
-					IsBusy = false;
-					return;
+					var rep = new StudentScheduleRepository();
+					var data = await rep.FetchScheduleAsync(Configuration.Group, Configuration.Date);
+					schedule = DomainScheduleConverter.ToWeekSchedule(data);
 				}
-
-				IsBusy = false;
-
-				if (schedule == null || schedule?.DaySchedules == null)
-				{
-					RiseAlertOccured("Не удалось получить расписание");
-					return;
-				}
-
-				await Navigation.PushAsync(new SchedulePage(new SchedulePageViewModel(schedule)));
 			}
+			catch (Exception)
+			{
+				RiseAlertOccured("Не удалось загрузить расписание.");
+				IsBusy = false;
+				return;
+			}
+
+			IsBusy = false;
+			if (schedule == null || schedule?.DaySchedules == null || schedule.DaySchedules.Count == 0)
+			{
+				RiseAlertOccured("Не удалось отобразить расписание.");
+				return;
+			}
+
+			if (!Configuration.ShowAllWeek)
+			{
+				schedule = new WeekSchedule(
+					schedule.WeekNumber,
+					schedule.DaySchedules.Where(s => s.Date == Configuration.Date));
+			}
+			await Navigation.PushAsync(new SchedulePage(new SchedulePageViewModel(schedule)));
 		}
 
 		private void RiseAlertOccured(string message)
