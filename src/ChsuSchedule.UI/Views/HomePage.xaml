@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 x:Class="ChsuSchedule.Views.HomePage"
+						 Title="Расписание ЧГУ">
+	<StackLayout Padding="10, 10, 10, 10">
+		<Grid Margin="0, 2, 0, 0">
+
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="40"/>
+			</Grid.RowDefinitions>
+
+			<Label Grid.Column="0" Grid.Row="0" VerticalTextAlignment="Center"
+						 Text="Студенты / преподаватели" FontSize="Medium"/>
+			<Switch Grid.Column="1" Grid.Row="0" HorizontalOptions="EndAndExpand"  
+							IsToggled="{Binding IsTeacherSchedule}" IsEnabled="{Binding IsNotBusy}"/>
+		</Grid>
+		
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="40"/>
+				<RowDefinition Height="40"/>
+			</Grid.RowDefinitions>
+
+			<Label Grid.Column="0" Grid.Row="0" VerticalTextAlignment="Center"
+						 FontSize="Medium">
+				<Label.Triggers>
+					<DataTrigger Binding="{Binding IsTeacherSchedule}"
+											 TargetType="Label"
+											 Value="True">
+						<Setter Property="Text" Value="Преподаватель"/>
+					</DataTrigger>
+					<DataTrigger Binding="{Binding IsTeacherSchedule}"
+											 TargetType="Label"
+											 Value="False">
+						<Setter Property="Text" Value="Группа"/>
+					</DataTrigger>
+				</Label.Triggers>
+			</Label>
+
+			<Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center"
+						 FontSize="Medium" IsEnabled="{Binding IsNotBusy}">
+				<Entry.Triggers>
+					<DataTrigger Binding="{Binding IsTeacherSchedule}"
+											 TargetType="Entry"
+											 Value="True">
+						<Setter Property="Text" Value="{Binding SelectedTeacher}"/>
+					</DataTrigger>
+					<DataTrigger Binding="{Binding IsTeacherSchedule}"
+											 TargetType="Entry"
+											 Value="False">
+						<Setter Property="Text" Value="{Binding SelectedGroup}"/>
+					</DataTrigger>
+				</Entry.Triggers>
+			</Entry>
+
+			<Label Grid.Column="0" Grid.Row="1" VerticalTextAlignment="Center"
+						 Text="Дата" FontSize="Medium"/>
+			<DatePicker Grid.Column="1" Grid.Row="1" VerticalOptions="Center"
+									Date="{Binding SelectedDate}" IsEnabled="{Binding IsNotBusy}"/>
+		</Grid>
+		
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="40"/>
+			</Grid.RowDefinitions>
+			
+			<Label Grid.Column="0" Grid.Row="0" VerticalTextAlignment="Center"
+						 Text="На день / на неделю" FontSize="Medium"/>
+			<Switch Grid.Column="1" Grid.Row="0" HorizontalOptions="EndAndExpand"  
+							IsToggled="{Binding ShowAllWeek}" IsEnabled="{Binding IsNotBusy}" />
+
+		</Grid>
+		
+		<Button Text="Показать расписание" 
+						Command="{Binding ShowScheduleCommand}" 
+						IsEnabled="{Binding IsNotBusy}"
+						Margin="0, 6, 0, 0"/>
+
+		<ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+
+	</StackLayout>
+</ContentPage>

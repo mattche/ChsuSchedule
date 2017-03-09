@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChsuSchedule.Data.Tests", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{660DFAC9-9A76-4D13-8237-23FE3B3B0BD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChsuSchedule", "ChsuSchedule\ChsuSchedule.csproj", "{B8EF8718-644C-4C2F-9225-DAD9FC41AD0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChsuSchedule.UI", "ChsuSchedule.UI\ChsuSchedule.UI.csproj", "{B8EF8718-644C-4C2F-9225-DAD9FC41AD0E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChsuSchedule.Droid", "ChsuSchedule.Droid\ChsuSchedule.Droid.csproj", "{614A0267-772A-47F2-A503-E41B19C18CBF}"
 EndProject

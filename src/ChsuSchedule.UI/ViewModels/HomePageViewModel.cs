@@ -125,9 +125,9 @@ namespace ChsuSchedule.ViewModels
 					schedule = DomainScheduleConverter.ToWeekSchedule(data);
 				}
 			}
-			catch (Exception)
+			catch (Exception exc)
 			{
-				RiseAlertOccured("Не удалось загрузить расписание.");
+				RiseAlertOccured($@"Не удалось загрузить расписание.{exc.ToString()}");
 				IsBusy = false;
 				return;
 			}

@@ -9,7 +9,7 @@
 			<ListView.GroupHeaderTemplate>
 				<DataTemplate>
 					<ViewCell>
-						<StackLayout Padding="0,10,0,10" BackgroundColor="#F5F5F5">
+						<StackLayout Padding="0, 10, 0, 10" BackgroundColor="#F5F5F5">
 							<Label Text="{Binding Key, StringFormat='{0:ddd, d MMMM}'}" 
 										 FontSize="Large" 
 										 FontAttributes="None" 
@@ -23,7 +23,7 @@
 				<DataTemplate>
 					<ViewCell>
 						<ViewCell.View>
-							<Grid Padding="4,4,4,4">
+							<Grid Padding="8, 4, 8, 4">
 								<Grid.ColumnDefinitions>
 									<ColumnDefinition Width="Auto"/>
 									<ColumnDefinition Width="*"/>
