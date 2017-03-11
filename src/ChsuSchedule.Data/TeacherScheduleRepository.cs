@@ -8,7 +8,7 @@ using ChsuSchedule.Data.Html;
 
 namespace ChsuSchedule.Data
 {
-	public sealed class TeacherScheduleRepository
+	public sealed class TeacherScheduleRepository : ITeacherScheduleRepository
 	{
 		#region .ctor
 

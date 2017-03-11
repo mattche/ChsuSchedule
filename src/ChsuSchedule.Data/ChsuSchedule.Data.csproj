@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="ChsuCalendarCalculator.cs" />
     <Compile Include="IStudentScheduleRepository.cs" />
+    <Compile Include="ITeacherScheduleRepository.cs" />
     <Compile Include="Parser\IScheduleParser.cs" />
     <Compile Include="Parser\ScheduleParser.cs" />
     <Compile Include="Parser\StudentExamScheduleRecord.cs" />
